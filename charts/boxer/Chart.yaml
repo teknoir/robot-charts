@@ -1,0 +1,17 @@
+apiVersion: v2
+name: boxer
+description: A Helm chart for Boxer Property
+
+type: application
+version: 0.0.1
+appVersion: "1.0.0"
+
+dependencies:
+  - name: nvr
+    version: 0.2.2
+    repository: https://teknoir.github.io/nvr-helm
+  - name: triton
+    version: 0.1.0
+    repository: https://teknoir.github.io/triton-helm
+# TODO: Add Observatory pipeline
+# TODO: Add Historian
