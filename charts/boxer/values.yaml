@@ -2,7 +2,7 @@ triton:
   models:
     - name: rtdetr
       image:  us-docker.pkg.dev/teknoir/gcr.io/rtdetr-triton:latest
-    - name: up_down_classifier
+    - name: up-down-classifier
       image:  us-docker.pkg.dev/teknoir/gcr.io/up-down-classifier-triton:latest
 
 nvr:
