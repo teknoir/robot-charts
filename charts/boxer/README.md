@@ -31,12 +31,6 @@ spec:
 
 ```yaml
 nvr:
-  defaults:
-    nvdsanalytics:
-      enabled: true
-      config: |
-        [property]
-        enable=0
   instances:
     - name: teknoir-nvr-2x3090-se-axis
       camera:
