@@ -3,7 +3,7 @@ name: boxer
 description: A Helm chart for Boxer Property
 
 type: application
-version: 0.2.3
+version: 0.2.4
 appVersion: "1.0.0"
 
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     version: 0.1.2
     repository: https://teknoir.github.io/triton-helm
   - name: historian
-    version: 0.0.4
+    version: 0.0.5
     repository: https://teknoir.github.io/historian-helm
   - name: observatory-pipeline
     version: 0.0.4
