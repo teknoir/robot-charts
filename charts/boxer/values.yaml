@@ -49,6 +49,7 @@ observatory-pipeline:
 #    - stream: loitering
 #    - stream: person-down
 #    - stream: catalytic-theft
+#    - stream: line-crossing
 #    # ALERT PROCESSING
 #    - stream: update-alerts
 #    - stream: transfer-file
