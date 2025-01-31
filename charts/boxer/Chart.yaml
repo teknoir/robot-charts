@@ -3,12 +3,12 @@ name: boxer
 description: A Helm chart for Boxer Property
 
 type: application
-version: 0.3.3
+version: 0.3.4
 appVersion: "1.0.0"
 
 dependencies:
   - name: nvr
-    version: 0.2.6
+    version: 0.2.7
     repository: https://teknoir.github.io/nvr-helm
   - name: triton
     version: 0.1.2
