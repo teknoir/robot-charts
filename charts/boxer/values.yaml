@@ -34,23 +34,3 @@ observatory-pipeline:
     labels:
       teamspace: "boxer-property"
       domain: "teknoir.cloud"
-
-#  streams:
-#    - stream: update-frame-rate-control
-#      mqtt:
-#        topicDetections: "camera/frames/#"
-#    - stream: record-detections
-#      mqtt:
-#        topicDetections: "camera/frames/#"
-#    - stream: update-movements
-#    - stream: filter-movements
-#    # ALERTS
-#    - stream: motion
-#    - stream: loitering
-#    - stream: person-down
-#    - stream: catalytic-theft
-#    - stream: line-crossing
-#    # ALERT PROCESSING
-#    - stream: update-alerts
-#    - stream: transfer-file
-#    - stream: prepare-file
