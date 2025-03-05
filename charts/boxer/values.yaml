@@ -16,7 +16,7 @@ nvr:
       nonMotionEvents: true
     motion:
       # Number of frames to skip inference when motion is detected
-      activeInterval: 3
+      activeInterval: 5
     nvdsanalytics:
       enabled: true
       config: |
