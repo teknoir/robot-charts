@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gpu-metrics-app
+  namespace: {{ $.Release.Namespace }}
+  annotations:
+    {{- toYaml (default $.Values.defaults.annotations .annotations) | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gpu-metrics-app
+  template:
+    metadata:
+      labels:
+        app: gpu-metrics-app
+    spec:
+      containers:
+        - name: gpu-metrics-app
+          image: "{{ default $.Values.defaults.image.repository (default (dict "repository" $.Values.defaults.image.repository) .image).repository }}:{{ default $.Values.defaults.image.tag (default (dict "tag" $.Values.defaults.image.tag) .image).tag }}"
+          imagePullPolicy: Always
+          resources:
+            {{- toYaml (default $.Values.defaults.resources .resources) | nindent 12 }}

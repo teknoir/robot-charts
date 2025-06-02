@@ -1,0 +1,35 @@
+# Values needed for Prometheus
+defaults:
+  annotations:
+    teknoir.org/managed-by: devstudio
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 1048Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+  image:
+    repository: us-docker.pkg.dev/teknoir/gcr.io/gpu-metrics-app
+    tag: 1.1
+
+dcgm-exporter:
+  podAnnotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9400"
+    teknoir.org/managed-by: devstudio
+  service:
+    annotations:
+      teknoir.org/managed-by: devstudio
+  serviceAccount:
+    annotations:
+      teknoir.org/managed-by: devstudio
+  nameOverride: "nvidia-exporter"
+  namespaceOverride: "default"
+  runtimeClassName: "nvidia"
+  serviceMonitor:
+    enabled: false
+
+gpu:
+  nvidia: true
+
