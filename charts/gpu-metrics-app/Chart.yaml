@@ -3,7 +3,7 @@ name: gpu-metrics-app
 description: A Helm chart for a generic GPU metrics app
 
 type: application
-version: 0.0.1
+version: 0.0.2
 appVersion: "v1.0.0"
 
 dependencies:
