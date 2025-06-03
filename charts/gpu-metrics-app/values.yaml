@@ -1,4 +1,5 @@
-# Values needed for Prometheus
+# configurable values for the gpu-metrics-app Helm chart
+
 defaults:
   annotations:
     teknoir.org/managed-by: devstudio
