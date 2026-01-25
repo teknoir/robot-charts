@@ -1,16 +1,10 @@
 instances:
   - name: talker
-    args:
-      - ros2
-      - run
-      - demo_nodes_cpp
-      - talker
+    commands: |
+      ros2 run demo_nodes_cpp talker
   - name: listener
-    args:
-      - ros2
-      - run
-      - demo_nodes_py
-      - listener
+    commands: |
+      ros2 run demo_nodes_py listener
 
 # Values possible for ROS instances
 defaults:
@@ -18,12 +12,26 @@ defaults:
     repository: us-docker.pkg.dev/teknoir/gcr.io/ros
     tag: jazzy
   replicas: 1
-  args: []
   resources: {}
+  hostWorkspacePath: /opt/teknoir/ros/default_ws
+  commands: |
+    ros2 run demo_nodes_cpp talker
+
+  # Hidden settings for ROS instances
+
   # discoveryServerAddress can be used to override the default Discovery Server address
   # e.g., discoveryServerAddress: "custom-discovery-server:11811"
+
   # domainId can be used to set the ROS_DOMAIN_ID environment variable
   # e.g., domainId: 1
+
+  # artifacts can be used to specify init containers for pre-loading data
+  # e.g., artifacts:
+  #         - name: custom-artifact
+  #           image: us-docker.pkg.dev/teknoir/gcr.io/custom-artifact
+  #           tag: latest
+  #           commands:
+  #             - echo "Downloading custom artifact..."
 
 discoveryServer:
   enabled: true
