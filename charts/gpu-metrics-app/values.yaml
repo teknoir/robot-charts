@@ -11,8 +11,8 @@ defaults:
       cpu: 100m
       memory: 128Mi
   image:
-    repository: us-docker.pkg.dev/teknoir/gcr.io/gpu-metrics-app
-    tag: 1.1
+    repository: ghcr.io/teknoir/gpu-metrics-app
+    tag: latest
 
 dcgm-exporter:
   podAnnotations:
