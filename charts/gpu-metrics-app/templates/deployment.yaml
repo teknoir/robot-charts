@@ -15,6 +15,10 @@ spec:
       labels:
         app: gpu-metrics-app
     spec:
+      {{- with $.Values.defaults.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       containers:
         - name: gpu-metrics-app
           image: "{{ default $.Values.defaults.image.repository (default (dict "repository" $.Values.defaults.image.repository) .image).repository }}:{{ default $.Values.defaults.image.tag (default (dict "tag" $.Values.defaults.image.tag) .image).tag }}"
