@@ -1,0 +1,99 @@
+{{- /*
+GPU exporter for NVIDIA Jetson (Tegra, integrated GPU): dcgm-exporter does not run there
+(DCGM/NVML do not support the integrated GPU). jetson-exporter (in the gpu-metrics-app image)
+serves the same DCGM_FI_DEV_* metrics on the same port from the host's sysfs, under the same
+name as the dcgm-exporter it replaces, so the device's Prometheus scrapes it unchanged.
+*/ -}}
+{{- if .Values.gpu.jetson }}
+{{- if .Values.gpu.nvidia }}
+{{- fail "gpu.nvidia (dcgm-exporter) and gpu.jetson are exclusive: set gpu.nvidia: false on Jetson devices" }}
+{{- end }}
+{{- $j := .Values.jetson }}
+{{- $image := default .Values.defaults.image $j.image }}
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: {{ $j.name }}
+  namespace: {{ $.Release.Namespace }}
+  labels:
+    app.kubernetes.io/name: {{ $j.name }}
+  annotations:
+    {{- toYaml .Values.defaults.annotations | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ $j.name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ $j.name }}
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: {{ $j.port | quote }}
+        {{- with .Values.defaults.annotations }}
+        {{- toYaml . | nindent 8 }}
+        {{- end }}
+    spec:
+      {{- with $j.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - name: jetson-exporter
+          image: "{{ $image.repository }}:{{ $image.tag }}"
+          imagePullPolicy: {{ $j.imagePullPolicy }}
+          command: ["./jetson-exporter"]
+          args: ["-address", ":{{ $j.port }}", "-sysfs", "/host/sys"]
+          env:
+            - name: NODE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+          ports:
+            - name: metrics
+              containerPort: {{ $j.port }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: metrics
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: metrics
+            periodSeconds: 30
+          resources:
+            {{- toYaml $j.resources | nindent 12 }}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 65534
+            capabilities:
+              drop: [ALL]
+          volumeMounts:
+            - name: sys
+              mountPath: /host/sys
+              readOnly: true
+      volumes:
+        - name: sys
+          hostPath:
+            path: /sys
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $j.name }}
+  namespace: {{ $.Release.Namespace }}
+  labels:
+    app.kubernetes.io/name: {{ $j.name }}
+  annotations:
+    {{- toYaml .Values.defaults.annotations | nindent 4 }}
+spec:
+  selector:
+    app.kubernetes.io/name: {{ $j.name }}
+  ports:
+    - name: metrics
+      port: {{ $j.port }}
+      targetPort: metrics
+{{- end }}

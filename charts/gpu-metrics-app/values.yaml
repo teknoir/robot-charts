@@ -32,5 +32,24 @@ dcgm-exporter:
     enabled: false
 
 gpu:
+  # dcgm-exporter (NVIDIA discrete GPUs, needs the nvidia runtime class)
   nvidia: true
+  # jetson-exporter (NVIDIA Jetson: Orin, Xavier); set nvidia: false with it
+  jetson: false
+
+# jetson-exporter (gpu.jetson). Same name and port as the dcgm-exporter it replaces.
+jetson:
+  name: nvidia-exporter
+  port: 9400
+  # Defaults to defaults.image (the exporter ships in the gpu-metrics-app image).
+  image: {}
+  imagePullPolicy: Always
+  nodeSelector: {}
+  resources:
+    limits:
+      cpu: 200m
+      memory: 64Mi
+    requests:
+      cpu: 10m
+      memory: 16Mi
 
