@@ -13,6 +13,11 @@ defaults:
   image:
     repository: ghcr.io/teknoir/gpu-metrics-app
     tag: latest
+  # The image is private. Devices keep their ghcr credential in teknoir-registry-secret (current
+  # installers) or artifact-registry-secret (older ones); a name that does not exist is ignored.
+  imagePullSecrets:
+    - name: teknoir-registry-secret
+    - name: artifact-registry-secret
 
 dcgm-exporter:
   podAnnotations:
