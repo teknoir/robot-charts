@@ -1,0 +1,76 @@
+instances:
+  - name: talker
+    commands:
+      - ros2 run demo_nodes_cpp talker
+  - name: listener
+    commands:
+      - ros2 run demo_nodes_py listener
+
+# Values possible for ROS instances
+defaults:
+  image:
+    repository: ghcr.io/teknoir/ros-helm/ros2
+    tag: dds-beta
+  replicas: 1
+  resources: {}
+  nodeSelector: {}
+  imagePullSecrets: []
+  hostWorkspacePath: /opt/teknoir/ros/default_ws
+  command: []
+  commands:
+    - ros2 run demo_nodes_cpp talker
+  # K8s NodePort range is typically 30000-32767
+  # e.g., nodePorts:
+  #        - name: http-fg-bridge
+  #          port: 8765
+  #          targetPort: 8765
+  #          nodePort: 31765
+  nodePorts: []
+
+  securityContext: {}
+  dnsPolicy: ClusterFirst
+  hostNetwork: false
+
+
+  # NVIROS
+  nviros: false
+  hostIsaacSimPath: /opt/teknoir/ros/default-isaac-sim
+
+  volumeMounts: []
+  volumes: []
+
+  # Hidden settings for ROS instances
+
+  # discoveryServerAddress can be used to override the default Discovery Server address
+  # e.g., discoveryServerAddress: "custom-discovery-server:11811"
+
+  # domainId can be used to set the ROS_DOMAIN_ID environment variable
+  # e.g., domainId: 1
+
+  # superClient can be used to set the ROS_SUPER_CLIENT environment variable
+  # e.g., superClient: "TRUE"
+
+  # artifacts can be used to specify init containers for pre-loading data
+  # e.g., artifacts:
+  #         - name: custom-artifact
+  #           image: us-docker.pkg.dev/teknoir/gcr.io/custom-artifact
+  #           tag: latest
+  #           commands:
+  #             - echo "Downloading custom artifact..."
+
+discoveryServer:
+  enabled: true
+  image:
+    repository: ghcr.io/teknoir/ros-helm/discovery
+    tag: dds-beta
+  replicas: 1
+  resources: {}
+  nodeSelector: {}
+
+zenohRouter:
+  ddsBridge:
+    enabled: false
+    image:
+      repository: zenoh/zenoh-bridge-ros2dds
+      tag: latest
+    resources: {}
