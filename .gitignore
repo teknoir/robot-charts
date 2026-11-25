@@ -1,0 +1,18 @@
+# Dependency charts fetched by `helm dependency build`, and packaged charts: chart-release builds both.
+charts/*/charts/
+*.tgz
+# Never commit keys or certificates.
+*.key
+*.pem
+*.crt
+# Editors, OS and scratch
+.idea/
+.vscode/
+*.iml
+*.swp
+.DS_Store
+tmp/
+*-rendered.yaml
+*.rendered.yaml
+# Test logs (scripts/test under agents)
+.test-logs/
