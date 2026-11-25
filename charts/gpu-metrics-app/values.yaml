@@ -1,0 +1,60 @@
+# configurable values for the gpu-metrics-app Helm chart
+
+defaults:
+  annotations:
+    teknoir.org/managed-by: devstudio
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 1048Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+  image:
+    repository: ghcr.io/teknoir/gpu-metrics-app
+    tag: latest
+  # The image is private. Devices keep their ghcr credential in teknoir-registry-secret (current
+  # installers) or artifact-registry-secret (older ones); a name that does not exist is ignored.
+  imagePullSecrets:
+    - name: teknoir-registry-secret
+    - name: artifact-registry-secret
+
+dcgm-exporter:
+  podAnnotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9400"
+    teknoir.org/managed-by: devstudio
+  service:
+    annotations:
+      teknoir.org/managed-by: devstudio
+  serviceAccount:
+    annotations:
+      teknoir.org/managed-by: devstudio
+  nameOverride: "nvidia-exporter"
+  namespaceOverride: "default"
+  runtimeClassName: "nvidia"
+  serviceMonitor:
+    enabled: false
+
+gpu:
+  # dcgm-exporter (NVIDIA discrete GPUs, needs the nvidia runtime class)
+  nvidia: true
+  # jetson-exporter (NVIDIA Jetson: Orin, Xavier); set nvidia: false with it
+  jetson: false
+
+# jetson-exporter (gpu.jetson). Same name and port as the dcgm-exporter it replaces.
+jetson:
+  name: nvidia-exporter
+  port: 9400
+  # Defaults to defaults.image (the exporter ships in the gpu-metrics-app image).
+  image: {}
+  imagePullPolicy: Always
+  nodeSelector: {}
+  resources:
+    limits:
+      cpu: 200m
+      memory: 64Mi
+    requests:
+      cpu: 10m
+      memory: 16Mi
+
