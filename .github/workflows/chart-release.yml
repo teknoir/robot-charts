@@ -1,0 +1,19 @@
+# CI v4 P9.2: one release workflow for every chart under charts/ (teknoir/ci-workflows chart-release.yml).
+name: chart-release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: chart-release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  chart-release:
+    uses: teknoir/ci-workflows/.github/workflows/chart-release.yml@main
+    permissions:
+      contents: write
