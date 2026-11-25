@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: core
+  name: {{ .Values.core.name }}
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- toYaml $.Values.annotations | nindent 4 }}
+spec:
+  replicas: {{ .Values.core.replicas }}
+  selector:
+    matchLabels:
+      app: core
+  template:
+    metadata:
+      labels:
+        app: core
+    spec:
+      runtimeClassName: nvidia
+      containers:
+        - image: {{ .Values.core.repository }}:{{ .Values.core.tag }}
+          imagePullPolicy: Always
+          ports:
+          - containerPort: {{ .Values.core.port }}
+          name: {{ .Values.core.name }}
+          command: [ "uwsgi", "--ini", "uwsgi.ini", "--buffer-size=83146" ]
+          env:
+            - name: ML_PORT
+              value: "{{ .Values.core.port }}"
+            - name: IMG_LENGTH_LIMIT
+              value: "640"
+            - name: UWSGI_PROCESSES
+              value: "2"
+            - name: UWSGI_THREADS
+              value: "1"
+#            - name: FACE_DETECTION_PLUGIN
+#              value: "insightface.FaceDetector@retinaface_r50_v1"
+#            - name: CALCULATION_PLUGIN
+#              value: "insightface.Calculator@arcface_r100_v1"
+#            - name: EXTRA_PLUGINS
+#              value: "insightface.LandmarksDetector,insightface.GenderDetector,insightface.AgeDetector"
+#            - name: BASE_IMAGE
+#              value: "compreface-core-base:base-cuda100-py37"
+#            - name: GPU_IDX
+#              value: "0"
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: compreface-core
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- toYaml $.Values.annotations | nindent 4 }}
+spec:
+  type: ClusterIP
+  selector:
+      app: core
+  ports:
+  - port: {{ .Values.core.port }}

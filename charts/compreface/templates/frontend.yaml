@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: fe
+  name: {{ .Values.fe.name }}
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- toYaml $.Values.annotations | nindent 4 }}
+spec:
+  replicas: {{ .Values.fe.replicas }}
+  selector:
+    matchLabels:
+      app: fe
+  template:
+    metadata:
+      labels:
+        app: fe
+    spec:
+      containers:
+        - image: '{{ .Values.fe.repository }}:{{ .Values.fe.tag }}'
+          imagePullPolicy: Always
+          name: {{ .Values.fe.name }}
+          ports:
+            - containerPort: {{ .Values.fe.port }}
+          env:
+            - name: CLIENT_MAX_BODY_SIZE
+              value: '10M'
+            - name: PROXY_READ_TIMEOUT
+              value: '60000ms'
+            - name: PROXY_CONNECT_TIMEOUT
+              value: '10000ms'
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: fe
+  name: compreface-ui
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- toYaml $.Values.annotations | nindent 4 }}
+spec:
+  type: {{ if .Values.fe.nodePort.enabled }}NodePort{{ else }}LoadBalancer{{ end }}
+  ports:
+    - port: 8000
+      targetPort: {{ .Values.fe.port }}
+      {{- if .Values.fe.nodePort.enabled }}
+      nodePort: {{ .Values.fe.nodePort.port }}
+      {{- end }}
+  selector:
+    app: fe
