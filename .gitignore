@@ -16,3 +16,4 @@ tmp/
 *.rendered.yaml
 # Test logs (scripts/test under agents)
 .test-logs/
+__pycache__/

@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+# Test entry point for robot-charts (CI and local).
+#
+# Runs the chart-version check's unit tests, then the check itself against
+# origin/<base> and origin/gh-pages. Under an agent (CLAUDECODE, AI_AGENT or
+# CODEX set) it prints only totals and failures and keeps the full output in
+# .test-logs/.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+quiet=0
+if [[ -n "${CLAUDECODE:-}${AI_AGENT:-}${CODEX:-}" ]]; then
+  quiet=1
+fi
+
+log=""
+if (( quiet )); then
+  mkdir -p .test-logs
+  log=".test-logs/test-$(date -u +%Y%m%dT%H%M%SZ).log"
+  exec 3>&1 4>&2
+  exec >>"$log" 2>&1
+  echo "== scripts/test $(date -u +%FT%TZ) =="
+fi
+
+if [[ "${CI:-}" == "true" ]] && ! python3 -c 'import yaml' 2>/dev/null; then
+  # GitHub-hosted runners: PyYAML is the check's only dependency.
+  python3 -m pip install --quiet --user --break-system-packages 'PyYAML==6.0.2'
+fi
+
+status=0
+python3 -m unittest discover -s scripts -p 'test_*.py' -v || status=1
+unit_status=$status
+
+base="${GITHUB_BASE_REF:-main}"
+if [[ "${CI:-}" == "true" ]]; then
+  # A PR checkout is shallow and has the PR branch only: make the base and
+  # gh-pages commits available.
+  if [[ "$(git rev-parse --is-shallow-repository)" == "true" ]]; then
+    git fetch --no-tags --unshallow origin || true
+  fi
+  if git fetch --no-tags origin \
+    "+refs/heads/${base}:refs/remotes/origin/${base}" \
+    "+refs/heads/gh-pages:refs/remotes/origin/gh-pages"; then
+    python3 scripts/check_chart_versions.py || status=1
+  else
+    echo "scripts/test: could not fetch origin/${base} and origin/gh-pages" >&2
+    status=1
+  fi
+elif git rev-parse --verify --quiet refs/remotes/origin/gh-pages >/dev/null; then
+  python3 scripts/check_chart_versions.py || status=1
+else
+  echo "scripts/test: origin/gh-pages not found locally; skipping the chart version check (unit tests still ran)" >&2
+fi
+check_status=$status
+
+if (( quiet )); then
+  ran="$(grep -E '^Ran [0-9]+ test' "$log" | tail -n 1 || true)"
+  result="$(grep -E '^(OK|FAILED)' "$log" | tail -n 1 || true)"
+  {
+    if (( status == 0 )); then
+      echo "scripts/test: ok${ran:+ (${ran}${result:+, ${result}})}"
+    else
+      detail=""
+      [[ -n "$ran" ]] && detail=" (${ran})"
+      if (( unit_status == 0 )); then
+        echo "scripts/test: FAILED (unit tests passed${detail})"
+      else
+        echo "scripts/test: FAILED (unit tests failed${detail}${result:+, ${result}})"
+        echo "unit test failures:"
+        grep -E '^(FAIL|ERROR):' "$log" || true
+      fi
+      if (( check_status != 0 )); then
+        echo "chart version check failed:"
+        grep -E '^(error:|check_chart_versions:|[0-9]+ chart\(s\) changed)' "$log" | sed -n '1,40p' || true
+      fi
+      echo "full log: $log"
+    fi
+  } >&3
+fi
+
+exit "$status"
