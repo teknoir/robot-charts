@@ -1,0 +1,3506 @@
+apiVersion: v1
+entries:
+  boxer:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-03-06T15:30:10.064608853Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.7
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.1.1
+    description: A Helm chart for Boxer Property
+    digest: fd0fe2b9dad5024ef1f1bf988896ff6fa498c1e2294880bd3bebc6c14b0cbf53
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.4.1/boxer-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-03-05T09:43:04.2800653Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.7
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.1.0
+    description: A Helm chart for Boxer Property
+    digest: 1da184cf919c779eda1151389fc5b3f0da89506a3665d74114dc06ffac40a6fe
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.4.0/boxer-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-31T12:05:45.166879298Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.7
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.1.1
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.10
+    description: A Helm chart for Boxer Property
+    digest: 2a42b24698b93717ff569d97314ea3715da54fd892acfaad8c178a8184d6e5d0
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.3.4/boxer-0.3.4.tgz
+    version: 0.3.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-31T11:58:40.476591241Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.6
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.1.1
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.10
+    description: A Helm chart for Boxer Property
+    digest: db721cce4c56e0da426c3180e77e590de6cc7f5c8a460a580e8bb44710f57fb6
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.3.3/boxer-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-30T20:01:50.070843876Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.1.1
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.10
+    description: A Helm chart for Boxer Property
+    digest: 252451b8f1fb33c99d3c29f6420eaba120d777d82a9a1e18c044aed3a0e27b69
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.3.2/boxer-0.3.2.tgz
+    version: 0.3.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-30T19:16:48.652610172Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.1.1
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.9
+    description: A Helm chart for Boxer Property
+    digest: 6900b92efc17f31804378e026b50f8e155532bf0ebc028192a16797dc67c25d0
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.3.1/boxer-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-28T15:34:38.179315981Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.1.1
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.8
+    description: A Helm chart for Boxer Property
+    digest: 49af8f1258d50f9053699496e5d98b9f48bd891c43949119aa5a56d707c9c0f9
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.3.0/boxer-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-28T14:28:13.413942672Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.1.1
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.7
+    description: A Helm chart for Boxer Property
+    digest: cb97f9733db9e0dfc3a9c271f4ff9b4a169661721632c5f5700db13202f40a27
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.9/boxer-0.2.9.tgz
+    version: 0.2.9
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-12-04T18:44:53.451130718Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.7
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.5
+    description: A Helm chart for Boxer Property
+    digest: e72bdbf503b8a29b10152e8098a4cdf4f528b2ed38dc9e5bf8bb13c821d11ca5
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.8/boxer-0.2.8.tgz
+    version: 0.2.8
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-25T12:06:37.391904737Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.7
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.5
+    description: A Helm chart for Boxer Property
+    digest: fe63e3ee3ccb085ee299fc4441a35a3253cfb4685caeb9c5e040ec6747c48497
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.7/boxer-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-25T10:37:30.079706673Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.6
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.5
+    description: A Helm chart for Boxer Property
+    digest: e1025a0b0e207787c2485eb8bec3fbad02727aba83bedc25ab253e79ec8d26a7
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.6/boxer-0.2.6.tgz
+    version: 0.2.6
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-25T08:08:45.40119611Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.5
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.4
+    description: A Helm chart for Boxer Property
+    digest: 4bc70ee0c7799f08214929dace7459bdd28f7dc13cf7c0317d616bba21879abb
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.5/boxer-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-25T08:07:01.61341805Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.5
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.4
+    description: A Helm chart for Boxer Property
+    digest: 40f0dc993bfde8196fdf45629174affd60a32af270ff1c4cfa09ff69c8e9bf15
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.4/boxer-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T08:38:59.173721763Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.2
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.4
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.4
+    description: A Helm chart for Boxer Property
+    digest: cbf54ce185ed8691f99a0b0f68ab373870521d2e15d2074528d329b854c94fe5
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.3/boxer-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T08:15:48.599877017Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.5
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.1
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.3
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.4
+    description: A Helm chart for Boxer Property
+    digest: 6de4785d7ede453efdf2dd23b4f2bb60b28f9d330d9fd025426aa32e507766b1
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.2/boxer-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T07:18:53.395817004Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.4
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.2
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.3
+    description: A Helm chart for Boxer Property
+    digest: 30be7064b055377feb271b36077a24134d7a256fb04905f10b54285351039fdd
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.1/boxer-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T07:17:19.864977689Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.4
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.2
+    - name: observatory-pipeline
+      repository: https://teknoir.github.io/observatory-pipeline-helm
+      version: 0.0.2
+    description: A Helm chart for Boxer Property
+    digest: aeb764f20aec550b2a5322b15f8ef3ae394bd355ea15a2f61c6611a4e21638b9
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.2.0/boxer-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-21T11:51:07.469682306Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.3
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    - name: historian
+      repository: https://teknoir.github.io/historian-helm
+      version: 0.0.2
+    description: A Helm chart for Boxer Property
+    digest: 46e43eda41278d6065be989a1b187202ef1b4839b0db4ddda13818b5d549fafc
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.1.0/boxer-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-21T09:32:48.72100385Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.3
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    description: A Helm chart for Boxer Property
+    digest: fadd0b38610b70523439a6a89016c17c3de67ba514a57cfe6cceb7000433cdc7
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.0.5/boxer-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-21T09:28:26.767543571Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.3
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    description: A Helm chart for Boxer Property
+    digest: b1266efbeb5166d4f80698127f12b8db6fa6398f54636a1cb40b3973391ccc68
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.0.4/boxer-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-21T08:37:57.319551992Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.2
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    description: A Helm chart for Boxer Property
+    digest: dbc1d4dbede7e270102335afc6e8baf888b05e1c8c24ebff0fdef24b05cf8e8b
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.0.3/boxer-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-21T08:08:08.810311066Z'
+    dependencies:
+    - name: nvr
+      repository: https://teknoir.github.io/nvr-helm
+      version: 0.2.2
+    - name: triton
+      repository: https://teknoir.github.io/triton-helm
+      version: 0.1.0
+    description: A Helm chart for Boxer Property
+    digest: 77d6cb9ffc3505d87eee12d290381c54047182bf42d1e27c1631462fc74f7c86
+    name: boxer
+    type: application
+    urls:
+    - https://github.com/teknoir/boxer-helm/releases/download/boxer-0.0.2/boxer-0.0.2.tgz
+    version: 0.0.2
+  compreface:
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-04-21T12:50:14.074701188Z'
+    description: A Helm chart for CompreFace
+    digest: c18f56740b1ec24d1886658c23d65959c8435e3f79aa2d156717dd272a62498a
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.16/compreface-0.0.16.tgz
+    version: 0.0.16
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-03-18T09:08:22.24075966Z'
+    description: A Helm chart for CompreFace
+    digest: 79d51a340f3ae5016a14bc5c355b1aaa258661a27f722e82a26535515433568b
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.15/compreface-0.0.15.tgz
+    version: 0.0.15
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-28T12:22:46.298806668Z'
+    description: A Helm chart for CompreFace
+    digest: f81c1a35d9bd05a65bfcb57150024e144323978c45a92db45046ae91c7fd605f
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.14/compreface-0.0.14.tgz
+    version: 0.0.14
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T18:51:12.980475924Z'
+    description: A Helm chart for CompreFace
+    digest: 73fbb3ec222d718b63bdeee7447876a12a66b023b203761db6085e42baaa8fc8
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.13/compreface-0.0.13.tgz
+    version: 0.0.13
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T18:28:03.388209513Z'
+    description: A Helm chart for CompreFace
+    digest: bfd06de333c037258535932763f5e989aea95e9e5ec2f42ecdef50adcb8222ee
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.12/compreface-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T18:21:09.976296661Z'
+    description: A Helm chart for CompreFace
+    digest: f04be77e94d4742e81a87c305a5744d94df007e2339c949cf4bd38e65461df1a
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.11/compreface-0.0.11.tgz
+    version: 0.0.11
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T14:50:49.633981662Z'
+    description: A Helm chart for CompreFace
+    digest: 5235a529224163b24bbb7b11f15c0d2b6cb54bb896b636756f2a0145b12b5486
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.10/compreface-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T13:52:07.087326808Z'
+    description: A Helm chart for CompreFace
+    digest: 6d373e3f940ed402d15a9a12bf08210d3d2b3680eccd9a8bd9bfe1c0a17fa49b
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.9/compreface-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T13:50:20.575744226Z'
+    description: A Helm chart for CompreFace
+    digest: c3587485a9d7011f71f544c3271cdfdcfb7ce3d71174e82dcb6b65a7a25b689d
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.8/compreface-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T13:46:26.627062757Z'
+    description: A Helm chart for CompreFace
+    digest: fcf506a00922131803ffb1212d6e8b1e31629ccf9fd2711f0f78552a27e5ac0b
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.7/compreface-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: '2025-01-27T13:43:16.652349117Z'
+    description: A Helm chart for CompreFace
+    digest: 4784314e54c1215e30f7f8ad54a20bb14d0dba68a66db02bf27c364bec4d6167
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.6/compreface-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 1.20.0
+    created: '2025-01-27T13:16:14.458123841Z'
+    description: A Helm chart for CompreFace
+    digest: fa120a08892ec1bee455bb5ba966c84d215e3206c5b3ba7671b550df4168eb9f
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.5/compreface-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: '2025-01-27T13:10:28.918249223Z'
+    description: A Helm chart for CompreFace
+    digest: b0f1ce9db5332422a044727980475759cc87075cf006a3039c01fcdf3fa195bf
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.4/compreface-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: '2025-01-27T13:01:08.094987104Z'
+    description: A Helm chart for CompreFace
+    digest: 8f83e2ce92b979b05278b02609b6ad25962bb8759f88328116a60d6f52b1f733
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.3/compreface-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: '2025-01-27T12:41:45.634144363Z'
+    description: A Helm chart for CompreFace
+    digest: 10063393e7c24400bcd952207d3882bff62c0af2c54e2f087420e53cdd8e840b
+    name: compreface
+    type: application
+    urls:
+    - https://github.com/teknoir/compreface-helm/releases/download/compreface-0.0.2/compreface-0.0.2.tgz
+    version: 0.0.2
+  devstudio:
+  - apiVersion: v2
+    appVersion: 5.0.10
+    created: '2026-11-23T19:14:27.543308864Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: c457b1ebb240caf5ab1c2fca8e3d86296632791ddc878b12516a55e50b3eda9b
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.1.0/devstudio-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2026-06-10T08:19:11.818334776Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: 355c1ed0d3a0bc3f4a62460bce969630c0b8f954945515fc4c939d78fd1bc74b
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.5/devstudio-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2026-06-09T18:56:03.619664734Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: f8e243a164e4b41d619010eff69d7edadf0414eb0e9823c9b7968e21b1adff43
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.5-beta/devstudio-0.0.5-beta.tgz
+    version: 0.0.5-beta
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2026-04-15T13:14:14.669935773Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: 2d38485a37acde8ae8a2f912cbc6cfb3549899d09fdea33064629d256e0b6ba8
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.4/devstudio-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2026-03-03T10:41:34.198811215Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: 812136e75d0e8c9f9c902142c529c7d6f9f6c7e146de1bc9ed4ca100e564c56f
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.3/devstudio-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2025-03-07T08:16:21.725811449Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: 565a9dd9d8262cd5661fba6fd66f59d0476b45226e48533b82d07eb2add53fae
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.2/devstudio-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2025-03-07T08:12:28.589057582Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: 5b7f213c2fbbe3efd6e176a8e1d87dde9ea427a95c25d597309ba4711368c058
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.1/devstudio-0.0.1.tgz
+    version: 0.0.1
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: '2025-03-07T08:05:38.385887297Z'
+    description: A Helm chart for Teknoir Devstudio
+    digest: efc856f3cee49e9af22548caea2844aa04b92e6d9889c038d72965cc65758144
+    name: devstudio
+    type: application
+    urls:
+    - https://github.com/teknoir/devstudio-helm/releases/download/devstudio-0.0.1-rc2/devstudio-0.0.1-rc2.tgz
+    version: 0.0.1-rc2
+  franka-cameras:
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-28T17:01:15.58774504Z'
+    description: Helm chart for Franka station cameras
+    digest: 01244a2c2c0b9036184a73860110e7fec1921c730a1a28e7ececc85f4d38d062
+    name: franka-cameras
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-cameras-0.1.3/franka-cameras-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T14:02:20.544786242Z'
+    description: Helm chart for Franka station cameras
+    digest: 6a8b2cf1662797603c2a354646fe4cfd1b53d5cb577014ecee445dc0898866c8
+    name: franka-cameras
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-cameras-0.1.2/franka-cameras-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T13:02:32.259291199Z'
+    description: Helm chart for Franka station cameras
+    digest: 8080c0b57fceb1a38ecd07e9fca856e50bce6e659bc97f823b6b88c31f204c71
+    name: franka-cameras
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-cameras-0.1.1/franka-cameras-0.1.1.tgz
+    version: 0.1.1
+  franka-pcf:
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-28T17:01:15.821667034Z'
+    description: Helm chart for Franka station PCF (Persona Control Framework)
+    digest: 586effe0ac9df914ad75382eebac1c330de13a33729504c9dcff3eb2eac9d3e5
+    name: franka-pcf
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-pcf-0.1.3/franka-pcf-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T14:02:20.764067989Z'
+    description: Helm chart for Franka station PCF (Persona Control Framework)
+    digest: d1dc329bf42f07eb4bb856c9db9deeffeffba25377cb9320db4a528e982a4834
+    name: franka-pcf
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-pcf-0.1.2/franka-pcf-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T13:02:32.517782273Z'
+    description: Helm chart for Franka station PCF (Persona Control Framework)
+    digest: 3248fe5f393cf37c525429350e3b79c986aa2286736e2d87f760aa0ddb62a021
+    name: franka-pcf
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-pcf-0.1.1/franka-pcf-0.1.1.tgz
+    version: 0.1.1
+  franka-ros:
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-28T17:01:16.189134267Z'
+    description: Helm chart for Franka station ROS 2 stack
+    digest: 457a643c4b34af0abd8e911fb7b1bc875a64623fe1e4423d31ba411d141f38e8
+    name: franka-ros
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-ros-0.1.3/franka-ros-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T14:02:20.96097725Z'
+    description: Helm chart for Franka station ROS 2 stack
+    digest: fd99192e955e2330f07a5105cf8bc3ae68bd5879e06c07934a5114f84fea47f4
+    name: franka-ros
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-ros-0.1.2/franka-ros-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T13:02:32.752088376Z'
+    description: Helm chart for Franka station ROS 2 stack
+    digest: 60bb5fb61c117f26970593c7c0ea9bcb02ed224dfb61419e5d0ff8c267117fc0
+    name: franka-ros
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-ros-0.1.1/franka-ros-0.1.1.tgz
+    version: 0.1.1
+  franka-station:
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-28T17:01:16.440644946Z'
+    dependencies:
+    - name: franka-cameras
+      repository: file://../franka-cameras
+      version: 0.1.3
+    - name: franka-pcf
+      repository: file://../franka-pcf
+      version: 0.1.3
+    - name: franka-ros
+      repository: file://../franka-ros
+      version: 0.1.3
+    - name: franka-zenoh-router
+      repository: file://../franka-zenoh-router
+      version: 0.1.3
+    description: Helm chart for the Franka station ROS 2 stack with Zenoh router
+    digest: 91c0d24e6dd4218d4fa58d815203f3efb2d3897a901901f2c55ea9d17a2e42e0
+    keywords:
+    - ros2
+    - franka
+    - zenoh
+    - manipulation
+    maintainers:
+    - name: persona
+    name: franka-station
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-station-0.1.3/franka-station-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T14:02:21.169767119Z'
+    dependencies:
+    - name: franka-cameras
+      repository: file://../franka-cameras
+      version: 0.1.2
+    - name: franka-pcf
+      repository: file://../franka-pcf
+      version: 0.1.2
+    - name: franka-ros
+      repository: file://../franka-ros
+      version: 0.1.2
+    - name: franka-zenoh-router
+      repository: file://../franka-zenoh-router
+      version: 0.1.2
+    description: Helm chart for the Franka station ROS 2 stack with Zenoh router
+    digest: 951395e620bc997b1c677437ec7cdce637593bd422cbd71638895d45ea8f8803
+    keywords:
+    - ros2
+    - franka
+    - zenoh
+    - manipulation
+    maintainers:
+    - name: persona
+    name: franka-station
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-station-0.1.2/franka-station-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T13:02:32.974017893Z'
+    dependencies:
+    - name: franka-cameras
+      repository: file://../franka-cameras
+      version: 0.1.1
+    - name: franka-pcf
+      repository: file://../franka-pcf
+      version: 0.1.1
+    - name: franka-ros
+      repository: file://../franka-ros
+      version: 0.1.1
+    - name: franka-zenoh-router
+      repository: file://../franka-zenoh-router
+      version: 0.1.1
+    description: Helm chart for the Franka station ROS 2 stack with Zenoh router
+    digest: b59e6c5ca72c100e386cc07b16b71103b26cfa63942e152af52e06f80a83dc53
+    keywords:
+    - ros2
+    - franka
+    - zenoh
+    - manipulation
+    maintainers:
+    - name: persona
+    name: franka-station
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-station-0.1.1/franka-station-0.1.1.tgz
+    version: 0.1.1
+  franka-zenoh-router:
+  - apiVersion: v2
+    appVersion: latest
+    created: '2026-05-28T17:01:16.745492086Z'
+    description: Helm chart for Franka station Zenoh router
+    digest: 4d6e46bd9b51ce1e9326ef7e30e74a89e4f1bec8b0225aaa3b41ccaf416186eb
+    name: franka-zenoh-router
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-zenoh-router-0.1.3/franka-zenoh-router-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: latest
+    created: '2026-05-13T14:02:21.382065438Z'
+    description: Helm chart for Franka station Zenoh router
+    digest: ec6dc435b04cc09e084fdba1fba37bf585c6c7eab018bee4b8f365771f4ea1bd
+    name: franka-zenoh-router
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-zenoh-router-0.1.2/franka-zenoh-router-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: latest
+    created: '2026-05-13T13:02:33.222982258Z'
+    description: Helm chart for Franka station Zenoh router
+    digest: d61371d70516e3e341607d27e4e29d35d4013bf6a6138b76b9d6c67c038ba2f0
+    name: franka-zenoh-router
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/franka-zenoh-router-0.1.1/franka-zenoh-router-0.1.1.tgz
+    version: 0.1.1
+  gpu-metrics-app:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: '2026-10-16T19:35:49.604908758Z'
+    dependencies:
+    - condition: gpu.nvidia
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: '>=4.0.0'
+    description: A Helm chart for a generic GPU metrics app
+    digest: 4033b33e2421b883560aad3ff0cd816405106207827a4277993011606ddbb3c6
+    name: gpu-metrics-app
+    type: application
+    urls:
+    - https://github.com/teknoir/gpu-metrics-app-helm/releases/download/gpu-metrics-app-0.0.5/gpu-metrics-app-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: '2026-10-16T19:06:30.085043641Z'
+    dependencies:
+    - condition: gpu.nvidia
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: '>=4.0.0'
+    description: A Helm chart for a generic GPU metrics app
+    digest: f5c934a1a90fb2aa9521aa909792401efadc97ca51ffa67598637c361b7fa723
+    name: gpu-metrics-app
+    type: application
+    urls:
+    - https://github.com/teknoir/gpu-metrics-app-helm/releases/download/gpu-metrics-app-0.0.4/gpu-metrics-app-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: '2026-04-15T13:34:50.052088564Z'
+    dependencies:
+    - condition: gpu.nvidia
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: '>=4.0.0'
+    description: A Helm chart for a generic GPU metrics app
+    digest: ea95451084221aaa285ecc49d4aa4434a3ce02b05d18f32124a27c2bc1b841e0
+    name: gpu-metrics-app
+    type: application
+    urls:
+    - https://github.com/teknoir/gpu-metrics-app-helm/releases/download/gpu-metrics-app-0.0.3/gpu-metrics-app-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: '2025-06-02T21:10:31.244125959Z'
+    dependencies:
+    - condition: gpu.nvidia
+      name: dcgm-exporter
+      repository: https://nvidia.github.io/dcgm-exporter/helm-charts
+      version: '>=4.0.0'
+    description: A Helm chart for a generic GPU metrics app
+    digest: 8360b1d8a3dc30840d1876d258969656200f094af1a5fc35f0f9ba1c9f32742b
+    name: gpu-metrics-app
+    type: application
+    urls:
+    - https://github.com/teknoir/gpu-metrics-app-helm/releases/download/gpu-metrics-app-0.0.2/gpu-metrics-app-0.0.2.tgz
+    version: 0.0.2
+  grafana:
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:55:47.224971211Z'
+    description: A Helm chart for Grafana
+    digest: 70c2cd650d353959f9d2de4a9ab8ca4785f2587194252f9305a93ea8dec300e3
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.12/grafana-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:51:55.062780378Z'
+    description: A Helm chart for Grafana
+    digest: 24595c6fdb6e1c03b04e59102b4801cd41e283a2e74c157f9d28db824e446006
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.11/grafana-0.0.11.tgz
+    version: 0.0.11
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:46:45.197048601Z'
+    description: A Helm chart for Grafana
+    digest: 24f6881912f42d73bbd30d3e4eccaf8dc609f38b812677fd02ec156c1c2307e1
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.10/grafana-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:43:50.501710883Z'
+    description: A Helm chart for Grafana
+    digest: 54c7667d80e96e28a7e9d59dc6aefcdfe9b70c69b652a70bf7762ac25278a2ba
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.9/grafana-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:40:21.615524938Z'
+    description: A Helm chart for Grafana
+    digest: f36116355ad4677afee8c798079e25b9a7605b04f2d74d9d6e41029d4129c3ff
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.8/grafana-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:37:23.458409253Z'
+    description: A Helm chart for Grafana
+    digest: 3fd28f83f786688ca5a4775b0dec0891d83f5f7cbb945831bd821975942cca1b
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.7/grafana-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2026-01-29T08:31:37.739467389Z'
+    description: A Helm chart for Grafana
+    digest: b5c6711a2c39ed461037d77fe55a32573ac043a2c2eb4658197436460d8c5a20
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.6/grafana-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2025-05-28T11:52:55.292315498Z'
+    description: A Helm chart for Grafana
+    digest: d1e86ed21ee729665da94b171b45c65835c5606e9326ae7a8abf50320ccb347b
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.5/grafana-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2025-05-28T11:48:34.465550946Z'
+    description: A Helm chart for Grafana
+    digest: 732881274eb6cc9e9ac97cdb230f71ca1a79fdca0c5699574c22669bb029578c
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.4/grafana-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2025-05-28T11:03:36.585088885Z'
+    description: A Helm chart for Grafana
+    digest: 4801d2e65f8a39b41a22ce6eba5950e1f70408daaf63c8635e0e595907bef7c2
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.3/grafana-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 11.3.1
+    created: '2024-11-22T13:47:39.333401788Z'
+    description: A Helm chart for Grafana
+    digest: 8ebc1e491a8c9cceb0446322612b3007ff278951621b66545f4ffa7881b5ee1b
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.2/grafana-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: '2024-11-22T13:14:53.26241171Z'
+    description: A Helm chart for Grafana
+    digest: d81d9de60c935c8aa0f4c2e2473005b99e34569287ede14060d1175279b44800
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/teknoir/grafana-helm/releases/download/grafana-0.0.1/grafana-0.0.1.tgz
+    version: 0.0.1
+  mediamtx:
+  - apiVersion: v2
+    appVersion: 1.12.2
+    created: '2026-03-03T12:14:27.51040237Z'
+    description: A Helm chart for MediaMTX
+    digest: 7776a21bb4e6927665e7435c9689f2487fe236fa4d5a39b79375261377c8b7d8
+    name: mediamtx
+    type: application
+    urls:
+    - https://github.com/teknoir/mediamtx-helm/releases/download/mediamtx-0.0.4/mediamtx-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 1.12.2
+    created: '2025-05-13T08:49:56.035390177Z'
+    description: A Helm chart for MediaMTX
+    digest: 34830c1a55cd5402850c5f419b4d6746c4c745598da7d74b3ab33e8eadf460ff
+    name: mediamtx
+    type: application
+    urls:
+    - https://github.com/teknoir/mediamtx-helm/releases/download/mediamtx-0.0.3/mediamtx-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 1.12.2
+    created: '2025-05-13T08:38:15.104985835Z'
+    description: A Helm chart for MediaMTX
+    digest: df579b2c7e463a00d3c07756be08ad0f0380f2670bc2ab9710fceb211ae5c8c6
+    name: mediamtx
+    type: application
+    urls:
+    - https://github.com/teknoir/mediamtx-helm/releases/download/mediamtx-0.0.2/mediamtx-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 1.12.2
+    created: '2025-05-13T08:23:15.909752778Z'
+    description: A Helm chart for MediaMTX
+    digest: da2a0d4e4f382b31bb05edb11ca48daa550ae24a19472ba69e9087e36866a960
+    name: mediamtx
+    type: application
+    urls:
+    - https://github.com/teknoir/mediamtx-helm/releases/download/mediamtx-0.0.1/mediamtx-0.0.1.tgz
+    version: 0.0.1
+  notebook:
+  - apiVersion: v2
+    appVersion: latest
+    created: '2026-06-10T08:17:19.715124287Z'
+    description: A Helm chart for Teknoir Notebook
+    digest: e28736420bbe961719a4409a2e5173e39cf79be3dcf81610fdc97c9c5175558b
+    name: notebook
+    type: application
+    urls:
+    - https://github.com/teknoir/notebook-helm/releases/download/notebook-0.0.2/notebook-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: latest
+    created: '2026-01-29T07:45:50.70852417Z'
+    description: A Helm chart for Teknoir Notebook
+    digest: 87634d47547d3e3ced6ca8a33844ebf5c04547903de9aa10aa89f8914772b7c2
+    name: notebook
+    type: application
+    urls:
+    - https://github.com/teknoir/notebook-helm/releases/download/notebook-0.0.1/notebook-0.0.1.tgz
+    version: 0.0.1
+  - apiVersion: v2
+    appVersion: latest
+    created: '2026-01-29T07:45:12.844158548Z'
+    description: A Helm chart for Teknoir Notebook
+    digest: 28a07e52d04826a89c9d7133ec1fb4592173263a16416f4bfd31b27f25c1f70c
+    name: notebook
+    type: application
+    urls:
+    - https://github.com/teknoir/notebook-helm/releases/download/notebook-0.0.0-alpha.1/notebook-0.0.0-alpha.1.tgz
+    version: 0.0.0-alpha.1
+  nvr:
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-17T13:54:37.608610492Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 72d853a8b6b47083f8392d371924fb74074a05cda82d10093a73af9b4d77e20f
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.5/nvr-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-16T15:41:26.173350008Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 5e1ac0df2280f0b2bf1ca3f1ebde1b9c3fdc05a911763317cfee9d4d0131aba6
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.4/nvr-0.3.4.tgz
+    version: 0.3.4
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-16T15:19:56.180779072Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: ed6c01d31d4b2242f1d900d1853238b6da9f3dcbf8f9cb93ef3280b183db4f6d
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.3/nvr-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-16T15:13:45.589835299Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: d44952ad14a128f75c4f0be437f733e9bafb49140b47c7cb53bb2ce4d4d69135
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.2/nvr-0.3.2.tgz
+    version: 0.3.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-16T13:46:14.507563353Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 4cdfaadd47446650de1ae95d97ed30845073a9d3ccb3d16a375c729a90944428
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.1/nvr-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-16T10:38:04.574033157Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 8e9a1e686f38fe7a088feca47c09818d7619ea6def0cc70677331d55150df44b
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0/nvr-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-10T13:27:57.010416692Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: e4815b06cde1bcd071caca633b4e63e67a5871c10f2dfcbceed7285426488cf7
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.10/nvr-0.3.0-beta.10.tgz
+    version: 0.3.0-beta.10
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-10T13:22:23.422958269Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 39d6f84cb7e4e69e81a3574b02bc92047c9695b4f0e9f81d03061c76e4a94f34
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.9/nvr-0.3.0-beta.9.tgz
+    version: 0.3.0-beta.9
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-04T09:21:10.844863622Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 54e5033c30b698360561119489c6cebb06c29f1e7fa08a2ce5601afaa5d5f6d6
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.8/nvr-0.3.0-beta.8.tgz
+    version: 0.3.0-beta.8
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-04T09:19:32.130345192Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 3a7cf7e1bd8e29d470c95916458afed2d603a87b7db663521048b2890565e77f
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.7/nvr-0.3.0-beta.7.tgz
+    version: 0.3.0-beta.7
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-04T09:11:54.878420908Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 31e093368e78522edb0e8a1b7e9df6cb2f47e50c4dc60109d590b80ea5a42c6d
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.6/nvr-0.3.0-beta.6.tgz
+    version: 0.3.0-beta.6
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-03T08:19:16.651032831Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: cee40b317e37558d8b027a2e8816c9ae4bed2130e23247b3bd7b491a74e38c8a
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.5/nvr-0.3.0-beta.5.tgz
+    version: 0.3.0-beta.5
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-03T07:01:16.155557187Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 2f1271e2566d9086b30ba7246e3ac5692dc65963983df22dcae93a6adbc3874d
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.4/nvr-0.3.0-beta.4.tgz
+    version: 0.3.0-beta.4
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-02T14:28:03.727204589Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 6992948560c29590b51fe8ae3e097a71e1953caca6c1f6eb56ae97058e9ec8ac
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.3/nvr-0.3.0-beta.3.tgz
+    version: 0.3.0-beta.3
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-02T13:10:55.538000862Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 66446d7bf57cafe483dc745f98a89a36a5e221a433601863376647e157843a57
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.2/nvr-0.3.0-beta.2.tgz
+    version: 0.3.0-beta.2
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: '2025-12-02T12:30:29.402771205Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 1e8c1f31970ee5c45fabca43e175c76c45b82cf69382c90c44f14abd41e50a86
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.3.0-beta.1/nvr-0.3.0-beta.1.tgz
+    version: 0.3.0-beta.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-04-15T14:53:26.599095456Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: e0a6f6e311d632d043e06f561f718041358860b3b8109888cf8c0fd5102d98f3
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.17/nvr-0.2.17.tgz
+    version: 0.2.17
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2026-03-03T13:10:35.875045084Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 4c9be245ade10b0476f950c4d4d4ec814293c6741b641094eb2c238346fb9954
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.16/nvr-0.2.16.tgz
+    version: 0.2.16
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-10-20T13:09:39.901808429Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 9fc97026ebad3ae2e5d79dc5cbecda7926fc1178250b9a1787c749f059785d31
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.15/nvr-0.2.15.tgz
+    version: 0.2.15
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-07-25T10:58:07.167756646Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 7f68cbde3c83ff64410d39a500e437c496b7e7d03d2b070329a1fd20ba1fbf17
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.14-beta.3/nvr-0.2.14-beta.3.tgz
+    version: 0.2.14-beta.3
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-07-25T09:49:04.638404915Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: f210898303fa8f7b5c469f0ba737fb39959291cb60035a8c05602aea44c59b91
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.14-beta.2/nvr-0.2.14-beta.2.tgz
+    version: 0.2.14-beta.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-06-05T07:21:27.667675973Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 72b5face2c85a095c5057371636c2f53fcd05bd7d200c35eeaae89f4d63c4138
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.14-beta.1/nvr-0.2.14-beta.1.tgz
+    version: 0.2.14-beta.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T15:42:14.733720878Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: af4e6fdd6c09384c3ca66eb1ff257bf845e8f60aa2f1f5f681af8c974ab3771c
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.13/nvr-0.2.13.tgz
+    version: 0.2.13
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T12:57:29.523591139Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 2924eef4a9d727baba38fd6a15c22ebee12ed1d90180f236c923cb5ccf8026c1
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.13-beta.2/nvr-0.2.13-beta.2.tgz
+    version: 0.2.13-beta.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T12:10:17.811640351Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: bcc409c6390f409127ab48ae4719bb72770196cffe107ea865e641c7a9391303
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.13-beta.1/nvr-0.2.13-beta.1.tgz
+    version: 0.2.13-beta.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T11:32:32.851974977Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: c49ca0331d08b2e174fb6f2acb648fd829c52f9eb5f614d35b64a428587f7803
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.7/nvr-0.2.12-beta.7.tgz
+    version: 0.2.12-beta.7
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T11:18:54.684690332Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: ec4f59983691afbe340273886becd9c7486929798b2721360e290783b2fbf7a5
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.6/nvr-0.2.12-beta.6.tgz
+    version: 0.2.12-beta.6
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T10:59:57.635423848Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: ab6fe05a3d8854e90b4e1b8333d428ac6755e474b7a12815efd7c0e0a26fcbcf
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.5/nvr-0.2.12-beta.5.tgz
+    version: 0.2.12-beta.5
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T10:36:49.686001107Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: a2c3b717c57be0778fafe54bd0c5671faac18af6468f418611d0fc86d3d6d5be
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.4/nvr-0.2.12-beta.4.tgz
+    version: 0.2.12-beta.4
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-26T08:44:17.539198336Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 6adcdd7851ee50e243bbefe5b9d98a0a0442ab8916e9b85cfca4a46f7d4d80eb
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.3/nvr-0.2.12-beta.3.tgz
+    version: 0.2.12-beta.3
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-21T15:57:01.334354613Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 69720cb5b8867b6e19c394e02b40902d118bcdc086f342927f7d340e8b5a63e0
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.2/nvr-0.2.12-beta.2.tgz
+    version: 0.2.12-beta.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-21T14:37:29.999841895Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 5200ab94d47bdb229441a3c59e1407def3d8bc119b6e34c58d446a6797742ee6
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.12-beta.1/nvr-0.2.12-beta.1.tgz
+    version: 0.2.12-beta.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-08T14:18:12.484148313Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: ecf712ab06686ffb9ce726f43f093d67548deb53ca78ee0c32564a8a3943b7b2
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.11/nvr-0.2.11.tgz
+    version: 0.2.11
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-08T12:08:30.011736986Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 438f636993cef60f11f116e4ed003527681024c8ec6b89056f2a8037d5747037
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.10/nvr-0.2.10.tgz
+    version: 0.2.10
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-05-08T12:04:47.209061561Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 8698aa6f4f10e8023cb2ad20d0554fcee81658426606d9f17a545367a7c5dd6b
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9/nvr-0.2.9.tgz
+    version: 0.2.9
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-28T16:40:31.94006073Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 83df7626750e4ca878243b3c746dbb27cfdc08ded5d180b41698ffb6654d00e0
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9-livenessprobe.1/nvr-0.2.9-livenessprobe.1.tgz
+    version: 0.2.9-livenessprobe.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-28T11:33:05.931668227Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 4959446de915db2196292526ab69ff7b90b762ac24aaf5ba15718a236819ab0b
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9-dewarper.5/nvr-0.2.9-dewarper.5.tgz
+    version: 0.2.9-dewarper.5
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-28T08:04:50.735787141Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 555a15365b9dc2cb01012c25a0986b6551503f106a6f83a7ab11952240176f16
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9-dewarper.4/nvr-0.2.9-dewarper.4.tgz
+    version: 0.2.9-dewarper.4
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-25T13:12:51.111569841Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 703ceede746c1218392691fba38553d7ac7d876b330aa73824f281340bd8f848
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9-dewarper.3/nvr-0.2.9-dewarper.3.tgz
+    version: 0.2.9-dewarper.3
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-25T13:03:38.29500425Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: a1b5eeec75c19a7b244cb40cc4f7f2fb77811d7e4a28e3e91a86fe26e7f4f704
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9-dewarper.2/nvr-0.2.9-dewarper.2.tgz
+    version: 0.2.9-dewarper.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-25T12:52:52.893208484Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 3519190f48ef0e68a0938a68e1b0f5a985dbd835272cecf6b22b1b383a40217d
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.9-dewarper.1/nvr-0.2.9-dewarper.1.tgz
+    version: 0.2.9-dewarper.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-22T12:38:10.950312778Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 297aae93b19efcc416b62ec209f0b103bfab5a67be200c2181c69b9ef87fb971
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.8-trackers.2/nvr-0.2.8-trackers.2.tgz
+    version: 0.2.8-trackers.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-04-22T12:22:35.169642524Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: cba23091fffc594f6df12cf15e03d925eaabe959b57ccb00b968c50db964d7d2
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.8-trackers.1/nvr-0.2.8-trackers.1.tgz
+    version: 0.2.8-trackers.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-01-31T12:03:29.515842315Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 8a92a3b80180e6c0b946e4bfce2a74db5d63350c73e8f2d2f935c31d544bb737
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.7/nvr-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2025-01-31T11:57:44.905835342Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 60ec6c482d6e4f37db148bc25a7fafaf53ddbbb9bb3288fb329b2e76b93510ae
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.6/nvr-0.2.6.tgz
+    version: 0.2.6
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-22T07:47:07.738018221Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: c164d4e8fa8e7b025fa17e9615ff7b9774b0216c9f48872c1b8cc05a4df05f5b
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.5/nvr-0.2.5.tgz
+    version: 0.2.5
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-21T15:36:20.178774109Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 99c16a64e5d761850c1535ce93f7bbfc37c33b049d2522054de9d8e055e46a82
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.4/nvr-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-21T08:59:27.902865263Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: c20c369ba1dc0c186b988ec89ddc336f5821d6a98122930cce9f00b128b36547
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.3/nvr-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-21T07:28:21.398228993Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 51d39935afe02b736a9f6b3ef5f9c7e12d266c97e647aa8378f50f9f228bc00a
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.2/nvr-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-20T12:05:42.612708262Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 8d5528de65e3eb2544bee27d342934a77631fa181f60d7cf55cdd0de64d0c967
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.1/nvr-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-20T11:57:40.864792785Z'
+    description: A Helm chart for Teknoir AI NVRs
+    digest: 9f2724545b6089e812a9b2bd81b45e0ff29904ed6cf29999a97e217ca068ae56
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.2.0/nvr-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-20T08:38:48.905223697Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: 42108bbfb38aea476226566e239184f70c0fb3a1a507c4f76144d36d6c24e8d3
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.1.0/nvr-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-20T08:33:47.950388444Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: 99096e8dbe32780ea2e4e745c2ccff3ac3e72311b7466107b985f192c42edbfc
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.9/nvr-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-20T08:27:13.275282279Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: ccad0ac7cab7c442c2088489e6abf7c99d44cf1893b1e2fc9c4d20bb4c1c4ac4
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.8/nvr-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-20T07:36:50.215100241Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: 5765afa12742d6f5eace35e170a7e0dd01419e99cfe16a98de52f1823e8834d5
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.7/nvr-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-19T16:35:54.256602417Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: d666607aaee4fad8f868285abd34761622db26668feded31c06b13368898c641
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.6/nvr-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-19T16:32:43.841182675Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: 9af6145a1e98f9eb4d0c6669bbea2eb12f5148e1098371970a7ceb474e2dd77a
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.5/nvr-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-19T16:28:22.44255779Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: dbb2fbcf594a77ca145586d0b448525b02886a8ade61e94b62039312dd8da66e
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.4/nvr-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-19T16:06:40.881277222Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: 417abecfbd1aa8b0c9a846acda3e1875ad54ef2bff5067785444a2fd9f58f011
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.3/nvr-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 7.0.0
+    created: '2024-11-19T15:58:25.843596329Z'
+    description: A Helm chart for Teknoir AI NVR
+    digest: 63db6b1e48d60a74d60dc34e23c61486bd15463d43fc64e99404e9a87f37110e
+    name: nvr
+    type: application
+    urls:
+    - https://github.com/teknoir/nvr-helm/releases/download/nvr-0.0.2/nvr-0.0.2.tgz
+    version: 0.0.2
+  observatory-pipeline:
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2026-03-03T13:24:52.746664788Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.7
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.1
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.4
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.2
+    description: A Helm chart for Observatory Pipeline
+    digest: 56a7cc9833a305a84c85fae3be5a16c030a4a9c1716a55c5d430b4cee16a0606
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.1/observatory-pipeline-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-12-11T11:59:04.589104135Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: ab2a21494b28f4a520eb94d23be365e7c48daa78411ee9d670c83f17a11c3543
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.0-beta.6/observatory-pipeline-0.2.0-beta.6.tgz
+    version: 0.2.0-beta.6
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-16T13:45:22.170065657Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: f56cb4c782e2d538ea2f1100ce470dd9e1a120a7873260d196a730ef1a7c975a
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.0-beta.5/observatory-pipeline-0.2.0-beta.5.tgz
+    version: 0.2.0-beta.5
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-16T12:10:48.364068323Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: 5fb28f7075cdfa63443c8d8c0cb4da7bb519d3b5a7320a059d3dd7fc5e130d77
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.0-beta.4/observatory-pipeline-0.2.0-beta.4.tgz
+    version: 0.2.0-beta.4
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-16T11:29:46.60127038Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: b6169ffd2ac122a4c0a3d135be4775ee7efef671603ab924a3259dd084624cce
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.0-beta.3/observatory-pipeline-0.2.0-beta.3.tgz
+    version: 0.2.0-beta.3
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-06T11:27:30.10101074Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: fdd4c34768ee1e5a0b9adc3d4635cea7f7f119d1de5605583a231d2e3c878407
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.0-beta.2/observatory-pipeline-0.2.0-beta.2.tgz
+    version: 0.2.0-beta.2
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-03T13:01:36.978240949Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: 23a89b0bbd4af79a074fba31196f01aa984ff194e92d9da871643c912f83537b
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.2.0-beta.1/observatory-pipeline-0.2.0-beta.1.tgz
+    version: 0.2.0-beta.1
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-02T14:54:14.939800075Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    - name: seaweedfs
+      repository: https://teknoir.github.io/seaweedfs-helm
+      version: 0.0.1
+    description: A Helm chart for Observatory Pipeline
+    digest: 9a986f03466b3402391012b1c928cbcd1f081afc20f565e7008b777ec7774294
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.12-beta4-anders/observatory-pipeline-0.1.12-beta4-anders.tgz
+    version: 0.1.12-beta4-anders
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-28T23:07:10.727096078Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 9b1555f2b703b4d5e4c0ae113285302658862b28095cdf42ecb9aed1c916d6ab
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.12-beta3-anders/observatory-pipeline-0.1.12-beta3-anders.tgz
+    version: 0.1.12-beta3-anders
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-26T19:32:53.463432205Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: cc3976c90423372df9cf5990e3ce832f99dcadb1edd769e141ece90b49f3332e
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.12-beta2/observatory-pipeline-0.1.12-beta2.tgz
+    version: 0.1.12-beta2
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-25T19:40:00.64906908Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: ca6adf78f4169c7ae6f539c57d5f4cc3987baea530e45a44b67859af69b41523
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.12-beta/observatory-pipeline-0.1.12-beta.tgz
+    version: 0.1.12-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-18T16:23:50.423898677Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 2617931d37dbbc96ea035b583e7d2ed3cf89b58ff31febf3f54020e4284e58e8
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.11-beta/observatory-pipeline-0.1.11-beta.tgz
+    version: 0.1.11-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-18T12:24:06.236174418Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: d69b21e07bbd1d2b9293cfebc03ff8341504e6e964f7d418fb6761c8243cb27f
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.10-beta/observatory-pipeline-0.1.10-beta.tgz
+    version: 0.1.10-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-14T08:45:14.511038435Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 0ae75f012eded7df570a0e82339a24a9bb4725ae25fbe84ac9379648670d3703
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.9-beta/observatory-pipeline-0.1.9-beta.tgz
+    version: 0.1.9-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-13T10:54:58.224867027Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 536022390487d6f7b849b6984e41d635421c445d0720c47a6a628a8f94f4d856
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.8-beta/observatory-pipeline-0.1.8-beta.tgz
+    version: 0.1.8-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-13T10:49:43.941413659Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 35df28854099a938951eb1afc531ab4c29ea94c66a519a82e878600a086c1905
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.7-beta/observatory-pipeline-0.1.7-beta.tgz
+    version: 0.1.7-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-08-13T10:20:20.165859834Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 1adc5a06784216e0b312b40455d49e045046737a607194680e6bac56bc02699a
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.6-beta/observatory-pipeline-0.1.6-beta.tgz
+    version: 0.1.6-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-07-31T13:16:20.452960824Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 0ffadf7c013372e7ac97ae7be8a3bc758e10f1b5ebbfc51a29092c03e75dc5f7
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.5-beta/observatory-pipeline-0.1.5-beta.tgz
+    version: 0.1.5-beta
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-10-03T13:04:43.915026734Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.5
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: c1ee5fcd0fec30e0f0c4e2b5a2f0f1db24744af596c272da6ee044a3ae237019
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.4/observatory-pipeline-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-07-31T09:08:04.082711316Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.2.0
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipeline
+    digest: 5955b7d658bdae31ffdaa8fd0928b60268607d95dcfc0fca230a4ac7df75778c
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.4-beta/observatory-pipeline-0.1.4-beta.tgz
+    version: 0.1.4-beta
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-04-29T11:22:31.526738144Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.4
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 2adfbb8b13fd4043c5e0cafc565f8c7a5ec85ba1c3fa53ef888bf90e9a250487
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.3-hands-up-running.2/observatory-pipeline-0.1.3-hands-up-running.2.tgz
+    version: 0.1.3-hands-up-running.2
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-04-10T09:19:43.969132776Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.4
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 0e0e19dd25f910df8e9e397308389d55fa2da437c03cacd6a131c84beae74908
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.3-hands-up-running.1/observatory-pipeline-0.1.3-hands-up-running.1.tgz
+    version: 0.1.3-hands-up-running.1
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-05-20T08:59:23.173093656Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.6
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: a065e5c2f9f531788c34e71a0bbec958c1197e9fdfe9613398e19bf8a55c330e
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.3-chart-fixing.2/observatory-pipeline-0.1.3-chart-fixing.2.tgz
+    version: 0.1.3-chart-fixing.2
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-05-15T07:23:14.659836737Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.5
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 3c0b48b9c89e4946ec9f6b02540c3a1fe2fd22de2144354c4f4651b8562d70b7
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.3-chart-fixing.1/observatory-pipeline-0.1.3-chart-fixing.1.tgz
+    version: 0.1.3-chart-fixing.1
+  - apiVersion: v2
+    appVersion: 2.0.1
+    created: '2025-05-08T11:15:13.117024819Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.5
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: f95b4744ed735a15377d2db6a6ba62b9129fb0ba9570c12f8cfd45011e20266e
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.3-chart-fixing.0/observatory-pipeline-0.1.3-chart-fixing.0.tgz
+    version: 0.1.3-chart-fixing.0
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-03-25T09:22:08.367515537Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.4
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 5305c31723bffbe14e0451b84b41a9f121d51c187ed1af8892aae990a6dd1e09
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.2-compreface.1/observatory-pipeline-0.1.2-compreface.1.tgz
+    version: 0.1.2-compreface.1
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-03-25T09:12:44.173663701Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.4
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 3bd164a2fc3deb1de708ef197eea81f6c9780a3fc69871f0baf38802d9b7996b
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.2-compreface.0/observatory-pipeline-0.1.2-compreface.0.tgz
+    version: 0.1.2-compreface.0
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-03-06T14:14:03.779064691Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.4
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 1ad47b4c46024e81f7ba6b2556677de0934dc74be5145c976419e13fee9d7906
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.1/observatory-pipeline-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-25T11:41:29.330213443Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 12d29997af1482769d3def702a2bc9c2693ff5328868f65bb7ba593b89ae9cf4
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0/observatory-pipeline-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-04T07:51:04.942149416Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.9
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 8d5cbd15ab677afe3cb8e858cd053b025706aa24066ca62f2fad69f1ae332b24
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.11/observatory-pipeline-0.1.0-clickhouse.11.tgz
+    version: 0.1.0-clickhouse.11
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-04T07:41:28.454029422Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.8
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 5ee254cdd2b44b88a7a16c1b29230eb2bbbccbc9242aaf038be737a69bc38b2e
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.10/observatory-pipeline-0.1.0-clickhouse.10.tgz
+    version: 0.1.0-clickhouse.10
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-04T07:29:58.927135625Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.7
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: c553514613ccac423d37232f7bd14c6d8df2fe7c5c8d28ea55291384bbdf9b68
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.9/observatory-pipeline-0.1.0-clickhouse.9.tgz
+    version: 0.1.0-clickhouse.9
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-04T07:15:05.91821587Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.6
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 218f8baacbc0e497173be1debdcc064d2740ef4a3cdcbecc26bafd263d35dadd
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.8/observatory-pipeline-0.1.0-clickhouse.8.tgz
+    version: 0.1.0-clickhouse.8
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-04T06:59:54.079673818Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.5
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.2
+    description: A Helm chart for Observatory Pipleine
+    digest: 203ec2f860789d78f27a41264f38da3a0d76f2c7c5c426f2590dcd715b706160
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.7/observatory-pipeline-0.1.0-clickhouse.7.tgz
+    version: 0.1.0-clickhouse.7
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-02-04T06:42:21.285723579Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.4
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.2
+    description: A Helm chart for Observatory Pipleine
+    digest: 75570cbcdbd1f9770080b54568c48049ad3d3e436a43393b98af5819bf01524f
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.6/observatory-pipeline-0.1.0-clickhouse.6.tgz
+    version: 0.1.0-clickhouse.6
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-01-31T15:18:18.293614496Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.3
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.2
+    description: A Helm chart for Observatory Pipleine
+    digest: 79f785447a4f788f264926eadb449ffac18b992ff1a51dafdf3239658c7166e1
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.5/observatory-pipeline-0.1.0-clickhouse.5.tgz
+    version: 0.1.0-clickhouse.5
+  - apiVersion: v2
+    appVersion: 2.0.0
+    created: '2025-01-31T15:08:05.366474403Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    - name: clickhouse
+      repository: https://teknoir.github.io/clickhouse-helm
+      version: 0.1.3
+    - name: keydb
+      repository: https://teknoir.github.io/keydb-helm
+      version: 0.1.2
+    description: A Helm chart for Observatory Pipleine
+    digest: 3539403176fa814fd9c633dc156860633f012e85753fa2c89f6076f5adb3d1ee
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.1.0-clickhouse.4/observatory-pipeline-0.1.0-clickhouse.4.tgz
+    version: 0.1.0-clickhouse.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-30T20:00:59.608548957Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.3
+    description: A Helm chart for Observatory Pipleine
+    digest: 957bc0d31afa394ea4a99020380df1c22c208be29c4afc0030fa121db14f2184
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.10/observatory-pipeline-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-30T18:59:48.741545933Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.2
+    description: A Helm chart for Observatory Pipleine
+    digest: a7c8db8560db1fadf849395049e314c2b1bdd3ec0d4540511aaf05e129ccd801
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.9/observatory-pipeline-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-28T15:16:11.946131678Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.2
+    description: A Helm chart for Observatory Pipleine
+    digest: 86276a8cf7553645a4541e24cbf5ca4126f812faf27e7b572e29c178eb62cbaa
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.8/observatory-pipeline-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2025-01-28T13:28:30.388338632Z'
+    dependencies:
+    - name: file-transfer
+      repository: https://teknoir.github.io/file-transfer-helm
+      version: 0.0.2
+    description: A Helm chart for Observatory Pipleine
+    digest: 12e149e1008ac118e5c75c17900d568db0bad16f41e08de6a0d8f6c6fe5c8e17
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.7/observatory-pipeline-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-12-19T15:13:24.390797573Z'
+    description: A Helm chart for Observatory Pipleine
+    digest: e322ae09e396654de87f9e15af7a8bbb74aa4dd8b56093c854da9f74a1444b11
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.6/observatory-pipeline-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-25T10:35:11.261578024Z'
+    description: A Helm chart for Observatory Pipleine
+    digest: a0e8beee7fb4f7f7886449ed81fd7e76b3f94f35be4ba3fd5e7ef40c39e0eebd
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.5/observatory-pipeline-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T08:05:03.844464759Z'
+    description: A Helm chart for Observatory Pipleine
+    digest: 2a0c825eff74c7aff3ff48164723ded05a1e35e10accf29ff3f2d42cae67eb5f
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.4/observatory-pipeline-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T07:07:49.305112563Z'
+    description: A Helm chart for Observatory Pipleine
+    digest: f382f4e0d8f5c32ac5e7bbe93bd24b1a33feecdf0a02c25a1eb5ee020dd30295
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.3/observatory-pipeline-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: '2024-11-22T06:47:22.824391288Z'
+    description: A Helm chart for Observatory Pipleine
+    digest: 599ea77f8c81f04c4d19930f82ed4efe8762450db2ff30eee410ef9b994cd367
+    name: observatory-pipeline
+    type: application
+    urls:
+    - https://github.com/teknoir/observatory-pipeline-helm/releases/download/observatory-pipeline-0.0.2/observatory-pipeline-0.0.2.tgz
+    version: 0.0.2
+  prometheus:
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: '2024-11-22T11:23:12.660371796Z'
+    description: A Helm chart for Prometheus
+    digest: 8bb8244440cc96d6d91eb8b2031c15a65b76889a107603817911bba409887a2a
+    name: prometheus
+    type: application
+    urls:
+    - https://github.com/teknoir/prometheus-helm/releases/download/prometheus-0.0.2/prometheus-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: v3.0.0
+    created: '2024-11-22T09:36:07.406718778Z'
+    description: A Helm chart for Prometheus
+    digest: 470ed31cffdaf216142eb14e1c7d499a1ba462932175a7dd8439e75ffccdf7be
+    name: prometheus
+    type: application
+    urls:
+    - https://github.com/teknoir/prometheus-helm/releases/download/prometheus-0.0.1/prometheus-0.0.1.tgz
+    version: 0.0.1
+  ros:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-08T14:27:12.982532855Z'
+    description: Chart to install ROS
+    digest: bde10a5177d1569c7ba47cf5d28786f55209899152e7d80d0346a33deb74b8d9
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.12/ros-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-08T14:16:13.933583825Z'
+    description: Chart to install ROS
+    digest: dbe1e4f6a9f38c5664b4c616696f2069b3c36bec358f5b491d614da5a2f39214
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.11/ros-0.0.11.tgz
+    version: 0.0.11
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-08T14:01:41.358472538Z'
+    description: Chart to install ROS
+    digest: dd20834de3dbb36b5913c33658a88958771433451bc975d8974d45671d7cb20d
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.10/ros-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-08T13:02:48.488335587Z'
+    description: Chart to install ROS
+    digest: ecdf984e2942855c9b6540fe7e5c053d2b4bd2fe3d745a9f66b890f2555c67e9
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.9/ros-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-08T08:08:37.748034165Z'
+    description: Chart to install ROS
+    digest: 184b8cd31c3eda6a4e33c57c31215cfef61aafd1cd13e06044ffded784947969
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.8/ros-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-08T07:56:56.389575211Z'
+    description: Chart to install ROS
+    digest: 1a0a7399db40a84dc91b3f0cc3aaf1eafddfd3c6226341625220a42cc1be957a
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.7/ros-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-07T19:12:58.249953548Z'
+    description: Chart to install ROS
+    digest: ca89139c46c2746e09f754e1b05384f7c135b2c9449d86923bd9751ec5a781c7
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.6/ros-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-07T18:43:57.733576654Z'
+    description: Chart to install ROS
+    digest: b5906f055891bc5f7dd39a6dd886882c418e4fb13736ea648a55d38dfafddd38
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.5/ros-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-05-07T18:38:52.755519002Z'
+    description: Chart to install ROS
+    digest: eff186a305ffcaeac1cd8906aff8b3ef5292e75c99ecedd42956c9872cd76b4c
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.4/ros-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-14T13:38:43.245046759Z'
+    description: Chart to install ROS
+    digest: bb3ac0ba9318418bef28331ebc848b426c8243788d5c71c5c9da244fb41b9731
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.3/ros-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-14T13:35:51.032865919Z'
+    description: Chart to install ROS
+    digest: a6a9ed82503e32567f292a10c4a6d146cad356ee4700d5f955fc8ea35cbfd991
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.2/ros-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-14T12:39:58.074279571Z'
+    description: Chart to install ROS
+    digest: 1e8dd4b0c8a60881c78c04c6abd5f8928cd9f7d5c4b6a81d46e29f587fd8f255
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.1/ros-0.0.1.tgz
+    version: 0.0.1
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-06-10T16:38:48.792512108Z'
+    description: Chart to install ROS
+    digest: 93b67fa1719cd6b4359f803ecde05c2f78438b00790521c74783a059bb6d057a
+    icon: https://www.ros.org/wp-content/uploads/2013/10/ros_logo.png
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-dds-beta.6/ros-0.0.0-dds-beta.6.tgz
+    version: 0.0.0-dds-beta.6
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-06-10T16:26:42.778988503Z'
+    description: Chart to install ROS
+    digest: 70a669e0ba776d9efc2d1d7cf058fc67e37eeaf11758cd19d8a4d6432bf5e5d8
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-dds-beta.5/ros-0.0.0-dds-beta.5.tgz
+    version: 0.0.0-dds-beta.5
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-06-10T11:50:00.189235384Z'
+    description: Chart to install ROS
+    digest: 84bcb634409fc55c708f142c1a6a3d2491ee86acd9eb7b875e218360d2d6498e
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-dds-beta.4/ros-0.0.0-dds-beta.4.tgz
+    version: 0.0.0-dds-beta.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-06-10T11:20:41.139795Z'
+    description: Chart to install ROS
+    digest: 2bf90a90cce34aac3c76dc6152c47f4c45443cecf7757ad2b34df62f5da7737b
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-dds-beta.3/ros-0.0.0-dds-beta.3.tgz
+    version: 0.0.0-dds-beta.3
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-06-10T11:00:52.397612304Z'
+    description: Chart to install ROS
+    digest: b9c79e36d82c050e6cb572987bbcaac5d4cde92becf40554f74ea14d6670048b
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-dds-beta.2/ros-0.0.0-dds-beta.2.tgz
+    version: 0.0.0-dds-beta.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-06T14:23:52.04484594Z'
+    description: Chart to install ROS
+    digest: 891c71f6b0cdf147d2f777d69cd30888e40f905797fcda3c409a306980c57bd0
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.37/ros-0.0.0-beta.37.tgz
+    version: 0.0.0-beta.37
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-02T14:35:36.941718818Z'
+    description: Chart to install ROS
+    digest: 03df338d737d7e67075a441a59a4e9793ae70dce197747f87242bbb12a175f62
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.36/ros-0.0.0-beta.36.tgz
+    version: 0.0.0-beta.36
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T18:23:12.070145695Z'
+    description: Chart to install ROS
+    digest: e1c7994576f8a0465152dd3c358d63e09bc0cc53637c25de48416d4b8c8f1682
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.35/ros-0.0.0-beta.35.tgz
+    version: 0.0.0-beta.35
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T18:10:45.846290493Z'
+    description: Chart to install ROS
+    digest: 32c6440bbdd150725c579a2fc37c7fbbf74f737493e3e059867ad6b1b26c1fa2
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.34/ros-0.0.0-beta.34.tgz
+    version: 0.0.0-beta.34
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T17:58:38.249099501Z'
+    description: Chart to install ROS
+    digest: 157800edb96dc29480628831d5b6581042ecf8e8bb4e5081abca4bf3d368bff1
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.33/ros-0.0.0-beta.33.tgz
+    version: 0.0.0-beta.33
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T17:55:06.13907202Z'
+    description: Chart to install ROS
+    digest: 7e4c95a7e95fcd262d79fb2569b6d37558e7620336985c79b15a60a3c5d8ce3b
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.32/ros-0.0.0-beta.32.tgz
+    version: 0.0.0-beta.32
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T17:28:17.808426732Z'
+    description: Chart to install ROS
+    digest: d350b64f529c90a4d05a1b4f4c5b7ce7336dc7e8843d595324cafdc8e5375dc3
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.31/ros-0.0.0-beta.31.tgz
+    version: 0.0.0-beta.31
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T17:24:36.310944935Z'
+    description: Chart to install ROS
+    digest: d8daad0f0b164b722dfee116fcc1a104aad2a26db8fcd5da3689c3872a1ab4b3
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.30/ros-0.0.0-beta.30.tgz
+    version: 0.0.0-beta.30
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T16:11:55.751085232Z'
+    description: Chart to install ROS
+    digest: bb295034b796964c55459042d3d7aff6be6470bf3da1a2535269c153ee7fee77
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.29/ros-0.0.0-beta.29.tgz
+    version: 0.0.0-beta.29
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T16:07:37.101422793Z'
+    description: Chart to install ROS
+    digest: 069f89ce64fdad4fee0b0a717f9b66e6e17990ff6d87a291c8e6618e76afb665
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.28/ros-0.0.0-beta.28.tgz
+    version: 0.0.0-beta.28
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T15:47:13.60241051Z'
+    description: Chart to install ROS
+    digest: 313c735b8c34fe90df05b7669cbf28d40426ce98cba51447ddaa0ad9a72b1a6f
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.27/ros-0.0.0-beta.27.tgz
+    version: 0.0.0-beta.27
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T15:34:17.120729705Z'
+    description: Chart to install ROS
+    digest: c96810569408e47e8ca8762fa655b08f601754ee612c36f4cd28b409cb6f4782
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.26/ros-0.0.0-beta.26.tgz
+    version: 0.0.0-beta.26
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T14:24:41.054208704Z'
+    description: Chart to install ROS
+    digest: e3d5019558d36b8c4fc7285fb8818c776a57f4d7de81870eeebb767c24dc6af1
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.25/ros-0.0.0-beta.25.tgz
+    version: 0.0.0-beta.25
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T14:21:26.193457834Z'
+    description: Chart to install ROS
+    digest: beb42c446bc54208da3041b59b69aa2451bf17d1747a67aa40901346adfb5b42
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.24/ros-0.0.0-beta.24.tgz
+    version: 0.0.0-beta.24
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T14:01:10.48758923Z'
+    description: Chart to install ROS
+    digest: 6bf638e46dbad717d3e50997297a1da14003d24ae082b8cbd7faf76af15017a6
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.23/ros-0.0.0-beta.23.tgz
+    version: 0.0.0-beta.23
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-04-01T13:06:46.48101115Z'
+    description: Chart to install ROS
+    digest: bc3e9b11aa6e389bb42fc0d17172a28c533ebbf6b9099f40d4860b9fed7d5427
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.22/ros-0.0.0-beta.22.tgz
+    version: 0.0.0-beta.22
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-02-06T14:00:31.917115518Z'
+    description: Chart to install ROS
+    digest: bf125ae0411b0d7e52812af4da5fe3afbf7a76fb33551199aa1f64ca5afe5d2f
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.21/ros-0.0.0-beta.21.tgz
+    version: 0.0.0-beta.21
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-02-06T13:43:40.877554904Z'
+    description: Chart to install ROS
+    digest: 645daebab778331d418be9118ba0b1e2d269c2936e15ccd5398c45e6e4bf9278
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.20/ros-0.0.0-beta.20.tgz
+    version: 0.0.0-beta.20
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-30T07:14:26.281148945Z'
+    description: Chart to install ROS
+    digest: cf698daee93fea32476ee87a209a4051e4ca9acb88bee82f53f5d28f4a947a25
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.19/ros-0.0.0-beta.19.tgz
+    version: 0.0.0-beta.19
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-29T13:22:02.550793003Z'
+    description: Chart to install ROS
+    digest: b89698cace42a75a79710bd8e23fbce2e2cbea39b830ce2bdb17910115ec54bf
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.18/ros-0.0.0-beta.18.tgz
+    version: 0.0.0-beta.18
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T15:32:04.889324843Z'
+    description: Chart to install ROS
+    digest: 2e58761dc403c96984d09b264cde2c33532f73f0f913ccda1b5bf092a69f7a85
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.17/ros-0.0.0-beta.17.tgz
+    version: 0.0.0-beta.17
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T15:31:05.178528291Z'
+    description: Chart to install ROS
+    digest: 1bcd5470262f5dfe816a7c24bcd916998fc41328a2ab2ca653ae408b26efb735
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.16/ros-0.0.0-beta.16.tgz
+    version: 0.0.0-beta.16
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T15:13:45.1618237Z'
+    description: Chart to install ROS
+    digest: def1282fb8fe8ff5d56f0cc277194badad86a204aeec1b17b1b58640bc22cfa0
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.15/ros-0.0.0-beta.15.tgz
+    version: 0.0.0-beta.15
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T15:04:37.452836852Z'
+    description: Chart to install ROS
+    digest: f344336f48bf567075d7d3e435cad9c63e83920d7734ce6f02dd5ce72e1ee1ab
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.14/ros-0.0.0-beta.14.tgz
+    version: 0.0.0-beta.14
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T14:46:01.05156411Z'
+    description: Chart to install ROS
+    digest: bd9ad6fd5b9f1ecfcc09dc3965fa554132ed693f552bbb2e7d2755389d7f9731
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.13/ros-0.0.0-beta.13.tgz
+    version: 0.0.0-beta.13
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T14:13:24.579045025Z'
+    description: Chart to install ROS
+    digest: 11d3193db90f146125aa16a2bebdea34b01931683c70a25d58c7482859648790
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.12/ros-0.0.0-beta.12.tgz
+    version: 0.0.0-beta.12
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T13:55:13.60866214Z'
+    description: Chart to install ROS
+    digest: ccc89b210ea2b96b84532f6555b345a6dbf8bff0dbfb11b3b69ea1f5c29248d1
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.11/ros-0.0.0-beta.11.tgz
+    version: 0.0.0-beta.11
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T13:49:14.115454636Z'
+    description: Chart to install ROS
+    digest: 3f47ad5d09dacb323767469f3a2bd8657e78790f1c16c84b48952fd42a9ef8ed
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.10/ros-0.0.0-beta.10.tgz
+    version: 0.0.0-beta.10
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T13:41:02.453710338Z'
+    description: Chart to install ROS
+    digest: 79445fadc94027b039995e33881d58e1a9bcd1f5c492f9226e312dd78b417550
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.9/ros-0.0.0-beta.9.tgz
+    version: 0.0.0-beta.9
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T13:35:05.608651573Z'
+    description: Chart to install ROS
+    digest: f2899e2863d607cb37c6807290b6a28d1e2d67fe5ebd2e1c761cc97c198a7471
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.8/ros-0.0.0-beta.8.tgz
+    version: 0.0.0-beta.8
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T12:15:18.941149646Z'
+    description: Chart to install ROS
+    digest: 9841c1cab0b2d9756befddf4b6a6ace75f7eaeb0bd8daad44d4d3a63ffaa362f
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.7/ros-0.0.0-beta.7.tgz
+    version: 0.0.0-beta.7
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-28T12:05:28.758126171Z'
+    description: Chart to install ROS
+    digest: 5c1ef65b95c14ded5079378523714a2bf7f0a6367d90d3e081f4c406d38f00b3
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.6/ros-0.0.0-beta.6.tgz
+    version: 0.0.0-beta.6
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-27T08:45:47.988254427Z'
+    description: Chart to install ROS
+    digest: 4846645cce76b53e97b4b25f57f7ee0b09a07655df3d9f631e0cde382f2c10ba
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.5/ros-0.0.0-beta.5.tgz
+    version: 0.0.0-beta.5
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T20:26:44.717877888Z'
+    description: Chart to install ROS
+    digest: ba5e970a39f3df4c5e20bbca9187d453580f09aa7d2705e61bbc3a1583dc37f0
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.4/ros-0.0.0-beta.4.tgz
+    version: 0.0.0-beta.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T20:15:04.818531688Z'
+    description: Chart to install ROS
+    digest: 7e5fdc25e5b1c2b17839f30938ab1d579339c035007dbe2686b1bfa2b72ff40d
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.3/ros-0.0.0-beta.3.tgz
+    version: 0.0.0-beta.3
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T20:10:22.371263195Z'
+    description: Chart to install ROS
+    digest: 78e49f2fbd2550dde9f32c6d95423ba6e6a2df8a60afe2b08605dab8c9d71cee
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.2/ros-0.0.0-beta.2.tgz
+    version: 0.0.0-beta.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T19:34:45.086975818Z'
+    description: Chart to install ROS
+    digest: bc42c48105b75e850bf193e162026d2eb174c6702207a7a55ec500d821f4ba3a
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-beta.1/ros-0.0.0-beta.1.tgz
+    version: 0.0.0-beta.1
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T19:20:17.732911691Z'
+    description: Chart to install ROS
+    digest: bf51f427d0bc457ebe38a72d247ad049b8689732da014f57a7fc821626f18280
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.9/ros-0.0.0-alpha.9.tgz
+    version: 0.0.0-alpha.9
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T14:22:55.200518281Z'
+    description: Chart to install ROS
+    digest: 76da86cea9c4c9a2deb9c1cedba64beb7e6da6c45fe7dda08ffa9f5528845b4d
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.8/ros-0.0.0-alpha.8.tgz
+    version: 0.0.0-alpha.8
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T13:54:40.341554963Z'
+    description: Chart to install ROS
+    digest: 93a25a87e84c5e9054685bc2566e6c1ade8be300cf66a9b1ac5d8a7fd768b13c
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.7/ros-0.0.0-alpha.7.tgz
+    version: 0.0.0-alpha.7
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T12:49:32.705733721Z'
+    description: Chart to install ROS
+    digest: 5b2f064fca798c1e3905d990d181613a9f7e4b8bcbee732a8e7ecd1f2071fe7a
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.6/ros-0.0.0-alpha.6.tgz
+    version: 0.0.0-alpha.6
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T12:34:25.161261188Z'
+    description: Chart to install ROS
+    digest: 124c82a13f932f508333c1ba8ae09fc489cd4757c493ef0ad18562383e347ff0
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.5/ros-0.0.0-alpha.5.tgz
+    version: 0.0.0-alpha.5
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T12:31:25.065229683Z'
+    description: Chart to install ROS
+    digest: 39d4f6882f30b10641379c7141a4af54ccc5c51e249e143d465ce53056b545f9
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.4/ros-0.0.0-alpha.4.tgz
+    version: 0.0.0-alpha.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-25T12:24:29.312171124Z'
+    description: Chart to install ROS
+    digest: 5fd99bf1faef97a333970acf3ad001d5e3be8b275e3911292f75d78cf4232e61
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.3/ros-0.0.0-alpha.3.tgz
+    version: 0.0.0-alpha.3
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-23T20:37:53.122092893Z'
+    description: Chart to install ROS
+    digest: 9e97575a7ee8ec4a49a4dc4ddf169447485b848bee1253ac73cbd9edb2e6331f
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.2/ros-0.0.0-alpha.2.tgz
+    version: 0.0.0-alpha.2
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: '2026-01-23T18:51:39.286456902Z'
+    description: Chart to install ROS
+    digest: e2395399c9c40e04cbb0b328a032e8d5327e2afc4059a33e64537ab098a29d93
+    name: ros
+    type: application
+    urls:
+    - https://github.com/teknoir/ros-helm/releases/download/ros-0.0.0-alpha.1/ros-0.0.0-alpha.1.tgz
+    version: 0.0.0-alpha.1
+  teleop-station:
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-28T17:01:17.027937925Z'
+    description: Helm chart for the Teleop station stack
+    digest: 32ec651c57763ec98726a8617b3b5a924f06225b295546793c7869d31b3311aa
+    keywords:
+    - ros2
+    - franka
+    - zenoh
+    - manipulation
+    maintainers:
+    - name: persona
+    name: teleop-station
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/teleop-station-0.1.3/teleop-station-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T14:02:21.579579956Z'
+    description: Helm chart for the Teleop station stack
+    digest: e08e09e3f4d6b16f8e543137c09ae86ac0b6d39ae64bbd13c7e6f92327e43600
+    keywords:
+    - ros2
+    - franka
+    - zenoh
+    - manipulation
+    maintainers:
+    - name: persona
+    name: teleop-station
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/teleop-station-0.1.2/teleop-station-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: jazzy-py3.12-dev-ubuntu24.04
+    created: '2026-05-13T13:02:33.480246183Z'
+    description: Helm chart for the Teleop station stack
+    digest: 6101960ed492249d77e47b3d22e01d3b7de2e85506374e0bf28a064ed8b8d689
+    keywords:
+    - ros2
+    - franka
+    - zenoh
+    - manipulation
+    maintainers:
+    - name: persona
+    name: teleop-station
+    type: application
+    urls:
+    - https://github.com/teknoir/franka-station-helm/releases/download/teleop-station-0.1.1/teleop-station-0.1.1.tgz
+    version: 0.1.1
+  triton:
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2026-10-29T09:24:38.928560424Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 1f3e7c4d5d643393cfb815d6ae9a580ae9df3375deb483f7ed0204c85a77fa09
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.3.0-rc.1/triton-0.3.0-rc.1.tgz
+    version: 0.3.0-rc.1
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2026-03-03T11:11:30.638196165Z'
+    description: A Helm chart for Triton Inference Server
+    digest: fcd5a6828b9c76daa6bd5d218975e1fb4ae776a23bbb156c222796103188e53d
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.1/triton-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2025-05-08T12:13:11.49534474Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 3d9ab4a5f7150f091d8c7a43eb2bbf489513480a70fad54dc126ba590be625cd
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0/triton-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2025-05-08T07:10:10.298913459Z'
+    description: A Helm chart for Triton Inference Server
+    digest: e52341854df49d297f76d9a5196c8b8dc70818084fb1cae8ea898629dc85bef7
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-trt10.8-nodeport/triton-0.2.0-trt10.8-nodeport.tgz
+    version: 0.2.0-trt10.8-nodeport
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2025-05-05T13:18:20.148954575Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 09d0014e87411127b688ab91ad1e926472987a6ba36feb78bcf53488cb05c515
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-trt10.8/triton-0.2.0-trt10.8.tgz
+    version: 0.2.0-trt10.8
+  - apiVersion: v2
+    appVersion: 2.49.0
+    created: '2025-04-01T13:24:21.77885664Z'
+    description: A Helm chart for Triton Inference Server
+    digest: ef9e8ff3727d197d56326d1c6d5afe86f55f29b006f47a7c5f0a1108ccbdbc4e
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-ds7.1/triton-0.2.0-ds7.1.tgz
+    version: 0.2.0-ds7.1
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2026-01-09T10:33:33.377036568Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 100453360a5bc4f30d0f0a6be712a000bba33c8c73f1f3103c8c4688f1cbedd0
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-cloud.4/triton-0.2.0-cloud.4.tgz
+    version: 0.2.0-cloud.4
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2025-11-12T15:53:11.99436567Z'
+    description: A Helm chart for Triton Inference Server
+    digest: f407241f13652d6cd2880706b80717a4906e268cc069f24b2b99029cebe1c67a
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-cloud.3/triton-0.2.0-cloud.3.tgz
+    version: 0.2.0-cloud.3
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2025-11-12T15:38:50.601586209Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 4134097c717d30e7b477d0dc4e8a7550f60a4335205e7dcb703dec5eb57c20f8
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-cloud.2/triton-0.2.0-cloud.2.tgz
+    version: 0.2.0-cloud.2
+  - apiVersion: v2
+    appVersion: '25.02'
+    created: '2025-11-12T15:23:23.881405268Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 22906db661cda2de9bfa1522c50a5ccef1083557bdec4d3a6e6e8d34b786d1cd
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.2.0-cloud.1/triton-0.2.0-cloud.1.tgz
+    version: 0.2.0-cloud.1
+  - apiVersion: v2
+    appVersion: 2.44.0
+    created: '2024-11-22T08:32:16.303001676Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 256b9f5938dce1ee6567e5f1630d94a3d78ce756bd0db7d5dc79a0a75177ca81
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.1.2/triton-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 2.44.0
+    created: '2024-11-22T08:00:40.237351907Z'
+    description: A Helm chart for Triton Inference Server
+    digest: e597e8bf735a6ba5ee827f922338592ad6ba0bf569469d25261e5b5635b336f3
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.1.1/triton-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 2.44.0
+    created: '2024-11-21T07:38:56.478451099Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 9f796a00ab94847f8e5d1f71fb98e36123c30d5e6e105356b85e3fe39eb12a21
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.1.0/triton-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 2.44.0
+    created: '2024-11-19T13:22:40.209915726Z'
+    description: A Helm chart for Triton Inference Server
+    digest: 434b0e22c34c63ac48782e0c0e5bf7734a3ce3663ee4837ac9c5773a2b71444e
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.0.3/triton-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 2.44.0
+    created: '2024-11-19T08:01:49.510738042Z'
+    description: A Helm chart for Triton Inference Server
+    digest: eff909ff9257554b9a9dcf9e224073ab20d30df28a0e4faeb9bd7f76d975821d
+    name: triton
+    type: application
+    urls:
+    - https://github.com/teknoir/triton-helm/releases/download/triton-0.0.2/triton-0.0.2.tgz
+    version: 0.0.2
+generated: '2026-11-25T16:30:00Z'
