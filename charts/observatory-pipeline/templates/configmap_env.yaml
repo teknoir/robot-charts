@@ -1,0 +1,241 @@
+{{- range .Values.streams }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: stream-{{ .stream }}-env-config
+  namespace: {{ $.Release.Namespace }}
+  labels:
+    app: stream-{{ .stream }}
+  annotations:
+    {{- toYaml (default $.Values.defaults.annotations .annotations) | nindent 4 }}
+data:
+  # General
+  DEBUG_LEVEL: "{{ default $.Values.defaults.debugLevel .debugLevel }}"
+  CLIENT_ID: "stream-{{ .stream }}"
+  STREAM: "{{ .stream }}"
+
+  # Instructor
+  INSTRUCTOR_MODEL: "{{ default $.Values.defaults.instructor.model (default (dict "model" $.Values.defaults.instructor.model) .instructor).model }}"
+  INSTRUCTOR_PROMPT: "{{ default $.Values.defaults.instructor.prompt (default (dict "prompt" $.Values.defaults.instructor.prompt) .instructor).prompt }}"
+
+  # MQTT
+  MQTT_SERVICE_HOST: "{{ default $.Values.defaults.mqtt.broker (default (dict "broker" $.Values.defaults.mqtt.broker) .mqtt).broker }}"
+  MQTT_SERVICE_PORT: "{{ default $.Values.defaults.mqtt.port (default (dict "port" $.Values.defaults.mqtt.port) .mqtt).port }}"
+  MQTT_USERNAME: "{{ default $.Values.defaults.mqtt.username (default (dict "username" $.Values.defaults.mqtt.username) .mqtt).username }}"
+  MQTT_PASSWORD: "{{ default $.Values.defaults.mqtt.password (default (dict "password" $.Values.defaults.mqtt.password) .mqtt).password }}"
+  QOS: "{{ default $.Values.defaults.mqtt.qos (default (dict "qos" $.Values.defaults.mqtt.qos) .mqtt).qos }}"
+  KEEP_ALIVE_INTERVAL: "{{ default $.Values.defaults.mqtt.keepAliveInterval (default (dict "keepAliveInterval" $.Values.defaults.mqtt.keepAliveInterval) .mqtt).keepAliveInterval }}"
+  CONNECT_RETRY_INTERVAL: "{{ default $.Values.defaults.mqtt.connectRetryInterval (default (dict "connectRetryInterval" $.Values.defaults.mqtt.connectRetryInterval) .mqtt).connectRetryInterval }}"
+  MQTT_TOPIC_SINK: "{{ default $.Values.defaults.mqtt.topicSink (default (dict "topicSink" $.Values.defaults.mqtt.topicSink) .mqtt).topicSink }}"
+  MQTT_TOPIC_SOURCE: "{{ default $.Values.defaults.mqtt.topicSource (default (dict "topicSource" $.Values.defaults.mqtt.topicSource) .mqtt).topicSource }}"
+  MQTT_TOPIC_ALL_CAMERAS: "{{ default $.Values.defaults.mqtt.topicAllCameras (default (dict "topicAllCameras" $.Values.defaults.mqtt.topicAllCameras) .mqtt).topicAllCameras }}"
+  MQTT_TOPIC_DETECTIONS: "{{ default $.Values.defaults.mqtt.topicDetections (default (dict "topicDetections" $.Values.defaults.mqtt.topicDetections) .mqtt).topicDetections }}"
+  MQTT_TOPIC_INFERENCE: "{{ default $.Values.defaults.mqtt.topicInference (default (dict "topicInference" $.Values.defaults.mqtt.topicInference) .mqtt).topicInference }}"
+  MQTT_TOPIC_MOVEMENTS: "{{ default $.Values.defaults.mqtt.topicMovements (default (dict "topicMovements" $.Values.defaults.mqtt.topicMovements) .mqtt).topicMovements }}"
+  MQTT_TOPIC_FILTERED_MOVEMENTS: "{{ default $.Values.defaults.mqtt.topicFilteredMovements (default (dict "topicFilteredMovements" $.Values.defaults.mqtt.topicFilteredMovements) .mqtt).topicFilteredMovements }}"
+  MQTT_TOPIC_ALERTS: "{{ default $.Values.defaults.mqtt.topicAlerts (default (dict "topicAlerts" $.Values.defaults.mqtt.topicAlerts) .mqtt).topicAlerts }}"
+  MQTT_TOPIC_STALE_ALERTS: "{{ default $.Values.defaults.mqtt.topicStaleAlerts (default (dict "topicStaleAlerts" $.Values.defaults.mqtt.topicStaleAlerts) .mqtt).topicStaleAlerts }}"
+  MQTT_TOPIC_SENSORS: "{{ default $.Values.defaults.mqtt.topicSensors (default (dict "topicSensors" $.Values.defaults.mqtt.topicSensors) .mqtt).topicSensors }}"
+  MQTT_TOPIC_MEASUREMENTS: "{{ default $.Values.defaults.mqtt.topicMeasurements (default (dict "topicMeasurements" $.Values.defaults.mqtt.topicMeasurements) .mqtt).topicMeasurements }}"
+  MQTT_TOPIC_TOE_STATE: "{{ default $.Values.defaults.mqtt.topicToeState (default (dict "topicToeState" $.Values.defaults.mqtt.topicToeState) .mqtt).topicToeState }}"
+  MQTT_TOPIC_TOE_EVENTS_INFERENCE: "{{ default $.Values.defaults.mqtt.topicToeEventsInference (default (dict "topicToeEventsInference" $.Values.defaults.mqtt.topicToeEventsInference) .mqtt).topicToeEventsInference }}"
+  MQTT_TOPIC_TOE_EVENTS_MOVEMENTS: "{{ default $.Values.defaults.mqtt.topicToeEventsMovements (default (dict "topicToeEventsMovements" $.Values.defaults.mqtt.topicToeEventsMovements) .mqtt).topicToeEventsMovements }}"
+  MQTT_TOPIC_TOE_EVENTS_ALERTS: "{{ default $.Values.defaults.mqtt.topicToeEventsAlerts (default (dict "topicToeEventsAlerts" $.Values.defaults.mqtt.topicToeEventsAlerts) .mqtt).topicToeEventsAlerts }}"
+  MQTT_TOPIC_TOE_EVENTS_STALE_ALERTS: "{{ default $.Values.defaults.mqtt.topicToeEventsStaleAlerts (default (dict "topicToeEventsStaleAlerts" $.Values.defaults.mqtt.topicToeEventsStaleAlerts) .mqtt).topicToeEventsStaleAlerts }}"
+  MQTT_TOPIC_TOE_EVENTS: "{{ default $.Values.defaults.mqtt.topicToeEvents (default (dict "topicToeEvents" $.Values.defaults.mqtt.topicToeEvents) .mqtt).topicToeEvents }}"
+  MQTT_TOPIC_TOE_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToeCommands (default (dict "topicToeCommands" $.Values.defaults.mqtt.topicToeCommands) .mqtt).topicToeCommands }}"
+  MQTT_TOPIC_TOE_FILE_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToeFileCommands (default (dict "topicToeFileCommands" $.Values.defaults.mqtt.topicToeFileCommands) .mqtt).topicToeFileCommands }}"
+  MQTT_TOPIC_DEVICES_ALL_EVENTS: "{{ default $.Values.defaults.mqtt.topicAllDevicesEvents (default (dict "topicAllDevicesEvents" $.Values.defaults.mqtt.topicAllDevicesEvents) .mqtt).topicAllDevicesEvents }}"
+  MQTT_TOPIC_DEVICES_FILE_TRANSFERS: "{{ default $.Values.defaults.mqtt.topicFileTransfers (default (dict "topicFileTransfers" $.Values.defaults.mqtt.topicFileTransfers) .mqtt).topicFileTransfers }}"
+  MQTT_TOPIC_DEVICES_EVENTS_ALERTS: "{{ default $.Values.defaults.mqtt.topicDevicesEventsAlerts (default (dict "topicDevicesEventsAlerts" $.Values.defaults.mqtt.topicDevicesEventsAlerts) .mqtt).topicDevicesEventsAlerts }}"
+  MQTT_TOPIC_DEVICES_EVENTS_STALE_ALERTS: "{{ default $.Values.defaults.mqtt.topicDevicesEventsStaleAlerts (default (dict "topicDevicesEventsStaleAlerts" $.Values.defaults.mqtt.topicDevicesEventsStaleAlerts) .mqtt).topicDevicesEventsStaleAlerts }}"
+  MQTT_TOPIC_DEVICES_EVENTS_MOVEMENTS: "{{ default $.Values.defaults.mqtt.topicDevicesEventsMovements (default (dict "topicDevicesEventsMovements" $.Values.defaults.mqtt.topicDevicesEventsMovements) .mqtt).topicDevicesEventsMovements }}"
+  MQTT_TOPIC_FACES: "{{ default $.Values.defaults.mqtt.topicFaces (default (dict "topicFaces" $.Values.defaults.mqtt.topicFaces) .mqtt).topicFaces }}"
+  MQTT_TOPIC_FACEREC_CUTOUTS: "{{ default $.Values.defaults.mqtt.topicFacerecCutouts (default (dict "topicFacerecCutouts" $.Values.defaults.mqtt.topicFacerecCutouts) .mqtt).topicFacerecCutouts }}"
+  MQTT_TOPIC_PERSON_CUTOUTS: "{{ default $.Values.defaults.mqtt.topicPersonCutouts (default (dict "topicPersonCutouts" $.Values.defaults.mqtt.topicPersonCutouts) .mqtt).topicPersonCutouts }}"
+  MQTT_TOPIC_LINE_CROSSING_CUTOUTS: "{{ default $.Values.defaults.mqtt.topicLineCrossingCutouts (default (dict "topicLineCrossingCutouts" $.Values.defaults.mqtt.topicLineCrossingCutouts) .mqtt).topicLineCrossingCutouts }}"
+  MQTT_TOPIC_WEAPON_CUTOUTS: "{{ default $.Values.defaults.mqtt.topicWeaponCutouts (default (dict "topicWeaponCutouts" $.Values.defaults.mqtt.topicWeaponCutouts) .mqtt).topicWeaponCutouts }}"
+  MQTT_TOPIC_TOE_FACE_COVER_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToeFaceCoverCommands (default (dict "topicToeFaceCoverCommands" $.Values.defaults.mqtt.topicToeFaceCoverCommands) .mqtt).topicToeFaceCoverCommands }}"
+  MQTT_TOPIC_TOE_SAFE_OPEN_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToeSafeOpenCommands (default (dict "topicToeSafeOpenCommands" $.Values.defaults.mqtt.topicToeSafeOpenCommands) .mqtt).topicToeSafeOpenCommands }}"
+  MQTT_TOPIC_TOE_BACKDOOR_OPEN_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToeBackdoorOpenCommands (default (dict "topicToeBackdoorOpenCommands" $.Values.defaults.mqtt.topicToeBackdoorOpenCommands) .mqtt).topicToeBackdoorOpenCommands }}"
+  MQTT_TOPIC_TOE_ALARM_EVENT_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToeAlarmEventCommands (default (dict "topicToeAlarmEventCommands" $.Values.defaults.mqtt.topicToeAlarmEventCommands) .mqtt).topicToeAlarmEventCommands }}"
+  MQTT_TOPIC_TOE_POS_EVENT_COMMANDS: "{{ default $.Values.defaults.mqtt.topicToePosEventCommands (default (dict "topicToePosEventCommands" $.Values.defaults.mqtt.topicToePosEventCommands) .mqtt).topicToePosEventCommands }}"
+
+  # Frontend
+  FRONT_END_DEFAULT_INTERVAL: "{{ default $.Values.defaults.fe.frontEndDefaultInterval (default (dict "frontEndDefaultInterval" $.Values.defaults.fe.frontEndDefaultInterval) .fe).frontEndDefaultInterval }}"
+
+  # Historian
+  HISTORIAN_BASE_URL: "{{ default $.Values.defaults.historian.apiUrl (default (dict "apiUrl" $.Values.defaults.historian.apiUrl) .historian).apiUrl }}"
+  HISTORIAN_DB_NAME: "{{ default $.Values.defaults.historian.dbName (default (dict "dbName" $.Values.defaults.historian.dbName) .historian).dbName }}"
+  HISTORIAN_DROP_TABLES: "{{ default $.Values.defaults.historian.dropTables (default (dict "dropTables" $.Values.defaults.historian.dropTables) .historian).dropTables }}"
+  HISTORIAN_DB_USER: "{{ default $.Values.defaults.historian.dbUser (default (dict "dbUser" $.Values.defaults.historian.dbUser) .historian).dbUser }}"
+  HISTORIAN_DB_PASSWORD: "{{ default $.Values.defaults.historian.dbPassword (default (dict "dbPassword" $.Values.defaults.historian.dbPassword) .historian).dbPassword }}"
+  RECORD_DETECTIONS_INTERVAL: "{{ default $.Values.defaults.historian.recordDetectionsInterval (default (dict "recordDetectionsInterval" $.Values.defaults.historian.recordDetectionsInterval) .historian).recordDetectionsInterval }}"
+  OBJECTS_TO_FILTER: "{{ default $.Values.defaults.historian.objectsToFilter (default (dict "objectsToFilter" $.Values.defaults.historian.objectsToFilter) .historian).objectsToFilter }}"
+  IOU_THRESHOLD: "{{ default $.Values.defaults.regions.iouThreshold (default (dict "iouThreshold" $.Values.defaults.regions.iouThreshold) .regions).iouThreshold }}"
+
+  # Video
+  MIN_START_BEFORE_ALERT: "{{ default $.Values.defaults.video.minStartBeforeAlert (default (dict "minStartBeforeAlert" $.Values.defaults.video.minStartBeforeAlert) .video).minStartBeforeAlert }}"
+  VIDEO_SEGMENT_LENGTH: "{{ default $.Values.defaults.video.segmentLength (default (dict "segmentLength" $.Values.defaults.video.segmentLength) .video).segmentLength }}"
+  VIDEO_SEGMENT_RETENTION_LENGTH: "{{ default $.Values.defaults.video.segmentRetentionLength (default (dict "segmentRetentionLength" $.Values.defaults.video.segmentRetentionLength) .video).segmentRetentionLength }}"
+  VIDEO_MAX_CLIP_LENGTH: "{{ default $.Values.defaults.video.maxClipLength (default (dict "maxClipLength" $.Values.defaults.video.maxClipLength) .video).maxClipLength }}"
+  VIDEO_CLIP_RUNUP_LENGTH: "{{ default $.Values.defaults.video.clipRunupLength (default (dict "clipRunupLength" $.Values.defaults.video.clipRunupLength) .video).clipRunupLength }}"
+  CHUNK_MAX_SIZE: "{{ default $.Values.defaults.video.chunkMaxSize (default (dict "chunkMaxSize" $.Values.defaults.video.chunkMaxSize) .video).chunkMaxSize }}"
+  CHUNK_RETENTION_SECONDS: "{{ default $.Values.defaults.video.chunkRetentionSeconds (default (dict "chunkRetentionSeconds" $.Values.defaults.video.chunkRetentionSeconds) .video).chunkRetentionSeconds }}"
+  VIDEO_BASE_PATH: "{{ default $.Values.defaults.video.videoBasePath (default (dict "videoBasePath" $.Values.defaults.video.videoBasePath) .video).videoBasePath }}"
+  VIDEO_HAS_ANNOTATIONS: "{{ default $.Values.defaults.video.hasAnnotations (default (dict "hasAnnotations" $.Values.defaults.video.hasAnnotations) .video).hasAnnotations }}"
+  ANNOTATIONS_BASE_PATH: "{{ default $.Values.defaults.video.annotationsBucketPath (default (dict "annotationsBucketPath" $.Values.defaults.video.annotationsBucketPath) .video).annotationsBucketPath }}"
+  SNAPSHOT_BASE_PATH: "{{ default $.Values.defaults.video.snapshotBucketPath (default (dict "snapshotBucketPath" $.Values.defaults.video.snapshotBucketPath) .video).snapshotBucketPath }}"
+
+  # Alerts
+  ALERT_STALE_SECONDS: "{{ default $.Values.defaults.alerts.staleSeconds (default (dict "staleSeconds" $.Values.defaults.alerts.staleSeconds) .alerts).staleSeconds }}"
+  VIDEO_CLIP_REAL_RUNUP_CALCULATION: "{{ default $.Values.defaults.alerts.clipRealRunupCalculation (default (dict "clipRealRunupCalculation" $.Values.defaults.alerts.clipRealRunupCalculation) .alerts).clipRealRunupCalculation }}"
+
+  # Person Down
+  PERSON_DOWN_INTERVAL: "{{ default $.Values.defaults.alerts.personDownInterval (default (dict "personDownInterval" $.Values.defaults.alerts.personDownInterval) .alerts).personDownInterval }}"
+  PERSON_DOWN_SCORE_THRESHOLD: "{{ default $.Values.defaults.alerts.personDownScoreThreshold (default (dict "personDownScoreThreshold" $.Values.defaults.alerts.personDownScoreThreshold) .alerts).personDownScoreThreshold }}"
+  PERSON_DOWN_DOMINANT_THRESHOLD: "{{ default $.Values.defaults.alerts.personDownDominantThreshold (default (dict "personDownDominantThreshold" $.Values.defaults.alerts.personDownDominantThreshold) .alerts).personDownDominantThreshold }}"
+  PERSON_UP_SCORE_THRESHOLD: "{{ default $.Values.defaults.alerts.personUpScoreThreshold (default (dict "personUpScoreThreshold" $.Values.defaults.alerts.personUpScoreThreshold) .alerts).personUpScoreThreshold }}"
+  PERSON_DOWN_UP_TOTAL_COUNT_THRESHOLD: "{{ default $.Values.defaults.alerts.personDownUpTotalCountThreshold (default (dict "personDownUpTotalCountThreshold" $.Values.defaults.alerts.personDownUpTotalCountThreshold) .alerts).personDownUpTotalCountThreshold }}"
+  PERSON_CUTOUT_DETECTION_THRESHOLD: "{{ default $.Values.defaults.alerts.personCutoutDetectionThreshold (default (dict "personCutoutDetectionThreshold" $.Values.defaults.alerts.personCutoutDetectionThreshold) .alerts).personCutoutDetectionThreshold }}"
+  PERSON_CUTOUT_PADDING_PROPORTION: "{{ default $.Values.defaults.alerts.personCutoutPaddingProportion (default (dict "personCutoutPaddingProportion" $.Values.defaults.alerts.personCutoutPaddingProportion) .alerts).personCutoutPaddingProportion }}"
+  PERSON_CUTOUT_MIN_SIZE: "{{ default $.Values.defaults.alerts.personCutoutMinSize (default (dict "personCutoutMinSize" $.Values.defaults.alerts.personCutoutMinSize) .alerts).personCutoutMinSize }}"
+  WEAPON_CUTOUT_MIN_SIZE: "{{ default $.Values.defaults.alerts.weaponCutoutMinSize (default (dict "weaponCutoutMinSize" $.Values.defaults.alerts.weaponCutoutMinSize) .alerts).weaponCutoutMinSize }}"
+  WEAPON_CUTOUT_PADDING_PROPORTION: "{{ default $.Values.defaults.alerts.weaponCutoutPaddingProportion (default (dict "weaponCutoutPaddingProportion" $.Values.defaults.alerts.weaponCutoutPaddingProportion) .alerts).weaponCutoutPaddingProportion }}"
+
+  # Sensors
+  SENSORS_NODE_DATA: "{{ default $.Values.defaults.alerts.sensorsNodeData (default (dict "sensorsNodeData" $.Values.defaults.alerts.sensorsNodeData) .alerts).sensorsNodeData }}"
+
+  # Loitering
+  LOITERING_LABELS: "{{ default $.Values.defaults.alerts.loiteringLabels (default (dict "loiteringLabels" $.Values.defaults.alerts.loiteringLabels) .alerts).loiteringLabels }}"
+  LOITERING_THRESHOLD: "{{ default $.Values.defaults.alerts.loiteringThreshold (default (dict "loiteringThreshold" $.Values.defaults.alerts.loiteringThreshold) .alerts).loiteringThreshold }}"
+  LOITERING_COUNT_THRESHOLD: "{{ default $.Values.defaults.alerts.loiteringCountThreshold (default (dict "loiteringCountThreshold" $.Values.defaults.alerts.loiteringCountThreshold) .alerts).loiteringCountThreshold }}"
+  LOITERING_CHECK_STATIONARY: "{{ default $.Values.defaults.alerts.loiteringCheckStationary (default (dict "loiteringCheckStationary" $.Values.defaults.alerts.loiteringCheckStationary) .alerts).loiteringCheckStationary }}"
+  LOITERING_STATIONARY_THRESHOLD: "{{ default $.Values.defaults.alerts.loiteringStationaryThreshold (default (dict "loiteringStationaryThreshold" $.Values.defaults.alerts.loiteringStationaryThreshold) .alerts).loiteringStationaryThreshold }}"
+
+  # Classification
+  DOMINANT_LABELS_MIN_COUNT: "{{ default $.Values.defaults.alerts.dominantLabelsMinCount (default (dict "dominantLabelsMinCount" $.Values.defaults.alerts.dominantLabelsMinCount) .alerts).dominantLabelsMinCount }}"
+  DOMINANT_LABELS_MIN_DURATION: "{{ default $.Values.defaults.alerts.dominantLabelsMinDuration (default (dict "dominantLabelsMinDuration" $.Values.defaults.alerts.dominantLabelsMinDuration) .alerts).dominantLabelsMinDuration }}"
+  DOMINANT_LABELS_ALERT_COOLDOWN_TIME: "{{ default $.Values.defaults.alerts.dominantLabelsAlertCooldownTime (default (dict "dominantLabelsAlertCooldownTime" $.Values.defaults.alerts.dominantLabelsAlertCooldownTime) .alerts).dominantLabelsAlertCooldownTime }}"
+  SAFE_OPEN_INFER_UNIQUE_ID: "{{ default $.Values.defaults.alerts.safeOpenInferUniqueId (default (dict "safeOpenInferUniqueId" $.Values.defaults.alerts.safeOpenInferUniqueId) .alerts).safeOpenInferUniqueId }}"
+  SAFE_OPEN_WINDOW_SIZE_SECONDS: "{{ default $.Values.defaults.alerts.safeOpenWindowSizeSeconds (default (dict "safeOpenWindowSizeSeconds" $.Values.defaults.alerts.safeOpenWindowSizeSeconds) .alerts).safeOpenWindowSizeSeconds }}"
+
+  # Motion
+  MOTION_CHECK_INTERVAL: "{{ default $.Values.defaults.alerts.motionCheckInterval (default (dict "motionCheckInterval" $.Values.defaults.alerts.motionCheckInterval) .alerts).motionCheckInterval }}"
+  MOTION_ALERT_COOLDOWN_TIME: "{{ default $.Values.defaults.alerts.motionAlertCooldownTime (default (dict "motionAlertCooldownTime" $.Values.defaults.alerts.motionAlertCooldownTime) .alerts).motionAlertCooldownTime }}"
+
+  # Heatmap
+  ALERT_HEATMAP_ENABLED: "{{ default $.Values.defaults.alerts.alertHeatmapEnabled (default (dict "alertHeatmapEnabled" $.Values.defaults.alerts.alertHeatmapEnabled) .alerts).alertHeatmapEnabled }}"
+  ALERT_HEATMAP_GRID_SIZE: "{{ default $.Values.defaults.alerts.alertHeatmapGridSize (default (dict "alertHeatmapGridSize" $.Values.defaults.alerts.alertHeatmapGridSize) .alerts).alertHeatmapGridSize }}"
+  ALERT_HEATMAP_EVENTS_RETENTION_PERIOD: "{{ default $.Values.defaults.alerts.alertHeatmapEventsRetentionPeriod (default (dict "alertHeatmapEventsRetentionPeriod" $.Values.defaults.alerts.alertHeatmapEventsRetentionPeriod) .alerts).alertHeatmapEventsRetentionPeriod }}"
+  ALERT_HEATMAP_THRESHOLD_FILTER: "{{ default $.Values.defaults.alerts.alertHeatmapThresholdFilter (default (dict "alertHeatmapThresholdFilter" $.Values.defaults.alerts.alertHeatmapThresholdFilter) .alerts).alertHeatmapThresholdFilter }}"
+  ALERT_HEATMAP_ALERTS_TO_FILTER: "{{ default $.Values.defaults.alerts.alertHeatmapAlertsToFilter (default (dict "alertHeatmapAlertsToFilter" $.Values.defaults.alerts.alertHeatmapAlertsToFilter) .alerts).alertHeatmapAlertsToFilter }}"
+  ALERT_HEATMAP_PERCENTILE_THRESHOLD: "{{ default $.Values.defaults.alerts.alertHeatmapPercentileThreshold (default (dict "alertHeatmapPercentileThreshold" $.Values.defaults.alerts.alertHeatmapPercentileThreshold) .alerts).alertHeatmapPercentileThreshold }}"
+  ALERT_HEATMAP_HARD_SUPRESSION: "{{ default $.Values.defaults.alerts.alertHeatmapHardSupression (default (dict "alertHeatmapHardSupression" $.Values.defaults.alerts.alertHeatmapHardSupression) .alerts).alertHeatmapHardSupression }}"
+
+  # Deprecated in favor of Org Tree
+  LABEL_DEVICE_ID: "{{ default $.Values.defaults.labels.deviceID (default (dict "deviceID" $.Values.defaults.labels.deviceID) .labels).deviceID }}"
+  LABEL_NAMESPACE: "{{ default $.Values.defaults.labels.namespace (default (dict "namespace" $.Values.defaults.labels.namespace) .labels).namespace }}"
+  LABEL_DOMAIN: "{{ default $.Values.defaults.labels.domain (default (dict "domain" $.Values.defaults.labels.domain) .labels).domain }}"
+
+  # Application identification
+  APP_NAME: "{{ default $.Values.defaults.appName .appName }}"
+  APP_VERSION: "{{ default $.Values.defaults.appVersion .appVersion }}"
+
+  # MongoDB
+  MONGODB_URI: "{{ default $.Values.defaults.mongodb.uri (default (dict "uri" $.Values.defaults.mongodb.uri) .mongodb).uri }}"
+
+  # ClickhouseDB
+  CLICKHOUSE_DB_URI: "{{ default $.Values.defaults.clickhouse.uri (default (dict "uri" $.Values.defaults.clickhouse.uri) .clickhouse).uri }}"
+  DETECTION_RETENTION: "{{ default $.Values.defaults.clickhouse.detectionRetention (default (dict "detectionRetention" $.Values.defaults.clickhouse.detectionRetention) .clickhouse).detectionRetention }}"
+  MOVEMENT_RETENTION: "{{ default $.Values.defaults.clickhouse.movementRetention (default (dict "movementRetention" $.Values.defaults.clickhouse.movementRetention) .clickhouse).movementRetention }}"
+  INFERENCE_RETENTION: "{{ default $.Values.defaults.clickhouse.inferenceRetention (default (dict "inferenceRetention" $.Values.defaults.clickhouse.inferenceRetention) .clickhouse).inferenceRetention }}"
+  ALERT_RETENTION: "{{ default $.Values.defaults.clickhouse.alertRetention (default (dict "alertRetention" $.Values.defaults.clickhouse.alertRetention) .clickhouse).alertRetention }}"
+
+  # KeyDB
+  KEYDB_DB_URI: "{{ default $.Values.defaults.keydb.uri (default (dict "uri" $.Values.defaults.keydb.uri) .keydb).uri }}"
+
+  # Milvus
+  MILVUS_DB_URI: "{{ default $.Values.defaults.milvus.uri (default (dict "uri" $.Values.defaults.milvus.uri) .milvus).uri }}"
+
+  # SeaweedFS
+  SEAWEEDFS_FILER_BASE_URL: "{{ default $.Values.defaults.seaweedfs.filerBaseUrl (default (dict "filerBaseUrl" $.Values.defaults.seaweedfs.filerBaseUrl) .seaweedfs).filerBaseUrl }}"
+  SEAWEEDFS_VOLUME_BASE_URL: "{{ default $.Values.defaults.seaweedfs.volumeBaseUrl (default (dict "volumeBaseUrl" $.Values.defaults.seaweedfs.volumeBaseUrl) .seaweedfs).volumeBaseUrl }}"
+  SEAWEEDFS_MASTER_BASE_URL: "{{ default $.Values.defaults.seaweedfs.masterBaseUrl (default (dict "masterBaseUrl" $.Values.defaults.seaweedfs.masterBaseUrl) .seaweedfs).masterBaseUrl }}"
+  SEAWEEDFS_TTL: "{{ default $.Values.defaults.seaweedfs.ttl (default (dict "ttl" $.Values.defaults.seaweedfs.ttl) .seaweedfs).ttl }}"
+
+  # Video directories
+  VIDEO_DIRECTORY: "{{ default $.Values.defaults.video.directory (default (dict "directory" $.Values.defaults.video.directory) .video).directory }}"
+  VIDEO_TEMP_DIRECTORY: "{{ default $.Values.defaults.video.tempDirectory (default (dict "tempDirectory" $.Values.defaults.video.tempDirectory) .video).tempDirectory }}"
+
+  # Metrics
+  METRICS_INTERVAL: "{{ default $.Values.defaults.metrics.interval (default (dict "interval" $.Values.defaults.metrics.interval) .metrics).interval }}"
+  METRICS_PORT: "{{ default $.Values.defaults.metrics.port (default (dict "port" $.Values.defaults.metrics.port) .metrics).port }}"
+
+  # Face Recognition
+  COMPREFACE_HOST: "{{ default $.Values.defaults.facerec.compreFaceHost (default (dict "compreFaceHost" $.Values.defaults.facerec.compreFaceHost) .facerec).compreFaceHost }}"
+  COMPREFACE_PORT: "{{ default $.Values.defaults.facerec.compreFacePort (default (dict "compreFacePort" $.Values.defaults.facerec.compreFacePort) .facerec).compreFacePort }}"
+  COMPREFACE_API_KEY: "{{ default $.Values.defaults.facerec.compreFaceApiKey (default (dict "compreFaceApiKey" $.Values.defaults.facerec.compreFaceApiKey) .facerec).compreFaceApiKey }}"
+  FACE_RETENTION: "{{ default $.Values.defaults.facerec.faceRetention (default (dict "faceRetention" $.Values.defaults.facerec.faceRetention) .facerec).faceRetention }}"
+  FACE_REC_INTERVAL: "{{ default $.Values.defaults.facerec.faceRecInterval (default (dict "faceRecInterval" $.Values.defaults.facerec.faceRecInterval) .facerec).faceRecInterval }}"
+  FACE_IMAGE_SIZE: "{{ default $.Values.defaults.facerec.faceImageSize (default (dict "faceImageSize" $.Values.defaults.facerec.faceImageSize) .facerec).faceImageSize }}"
+  FACE_REC_THRESHOLD: "{{ default $.Values.defaults.facerec.faceRecThreshold (default (dict "faceRecThreshold" $.Values.defaults.facerec.faceRecThreshold) .facerec).faceRecThreshold }}"
+  FACE_DETECTION_THRESHOLD: "{{ default $.Values.defaults.facerec.faceDetectionThreshold (default (dict "faceDetectionThreshold" $.Values.defaults.facerec.faceDetectionThreshold) .facerec).faceDetectionThreshold }}"
+  FACE_IMAGE_PADDING_PROPORTION: "{{ default $.Values.defaults.facerec.faceImagePaddingProportion (default (dict "faceImagePaddingProportion" $.Values.defaults.facerec.faceImagePaddingProportion) .facerec).faceImagePaddingProportion }}"
+  FACE_COVER_THRESHOLD: "{{ default $.Values.defaults.facerec.faceCoverThreshold (default (dict "faceCoverThreshold" $.Values.defaults.facerec.faceCoverThreshold) .facerec).faceCoverThreshold }}"
+  FACE_COVER_WINDOW_SIZE: "{{ default $.Values.defaults.facerec.faceCoverWindowSize (default (dict "faceCoverWindowSize" $.Values.defaults.facerec.faceCoverWindowSize) .facerec).faceCoverWindowSize }}"
+  FACE_COVER_SLIDING_INTERVAL: "{{ default $.Values.defaults.facerec.faceCoverSlidingInterval (default (dict "faceCoverSlidingInterval" $.Values.defaults.facerec.faceCoverSlidingInterval) .facerec).faceCoverSlidingInterval }}"
+
+  # Hands Up
+  HANDS_UP_INTERVAL: "{{ default $.Values.defaults.alerts.handsUpInterval (default (dict "handsUpInterval" $.Values.defaults.alerts.handsUpInterval) .alerts).handsUpInterval }}"
+  HANDS_UP_WINDOW: "{{ default $.Values.defaults.alerts.handsUpWindow (default (dict "handsUpWindow" $.Values.defaults.alerts.handsUpWindow) .alerts).handsUpWindow }}"
+  MIN_HANDS_UP_DETECTIONS_PER_SECOND: "{{ default $.Values.defaults.alerts.minHandsUpDetectionsPerSecond (default (dict "minHandsUpDetectionsPerSecond" $.Values.defaults.alerts.minHandsUpDetectionsPerSecond) .alerts).minHandsUpDetectionsPerSecond }}"
+
+  # Running
+  RUNNING_INTERVAL: "{{ default $.Values.defaults.runningDetection.interval (default (dict "interval" $.Values.defaults.runningDetection.interval) .runningDetection).interval }}"
+  RUNNING_VELOCITY_THRESHOLD: "{{ default $.Values.defaults.runningDetection.velocityThreshold (default (dict "velocityThreshold" $.Values.defaults.runningDetection.velocityThreshold) .runningDetection).velocityThreshold }}"
+  RUNNING_MIN_DETECTIONS: "{{ default $.Values.defaults.runningDetection.minDetections (default (dict "minDetections" $.Values.defaults.runningDetection.minDetections) .runningDetection).minDetections }}"
+
+  # Multicam ID
+  MULTICAM_ID_INTERVAL: "{{ default $.Values.defaults.multicamId.interval (default (dict "interval" $.Values.defaults.multicamId.interval) .multicamId).interval }}"
+  MULTI_CAM_EMBEDDING_RETENTION: "{{ default $.Values.defaults.multicamId.embeddingsRetention (default (dict "embeddingsRetention" $.Values.defaults.multicamId.embeddingsRetention) .multicamId).embeddingsRetention }}"
+  MULTI_CAM_AFFINITY_MATRIX_RETENTION: "{{ default $.Values.defaults.multicamId.affinityMatrixRetention (default (dict "affinityMatrixRetention" $.Values.defaults.multicamId.affinityMatrixRetention) .multicamId).affinityMatrixRetention }}"
+  MULTI_CAM_SIMILARITY_THRESHOLD: "{{ default $.Values.defaults.multicamId.similarityThreshold (default (dict "similarityThreshold" $.Values.defaults.multicamId.similarityThreshold) .multicamId).similarityThreshold }}"
+
+  # Weapons Detection
+  WEAPON_OBJECT_CLASSES: "{{ default $.Values.defaults.weaponsDetection.objectClasses (default (dict "objectClasses" $.Values.defaults.weaponsDetection.objectClasses) .weaponsDetection).objectClasses }}"
+  WEAPONS_SCORE_THRESHOLD: "{{ default $.Values.defaults.weaponsDetection.scoreThreshold (default (dict "scoreThreshold" $.Values.defaults.weaponsDetection.scoreThreshold) .weaponsDetection).scoreThreshold }}"
+  WEAPONS_INTERVAL: "{{ default $.Values.defaults.weaponsDetection.interval (default (dict "interval" $.Values.defaults.weaponsDetection.interval) .weaponsDetection).interval }}"
+  WEAPONS_WINDOW: "{{ default $.Values.defaults.weaponsDetection.window (default (dict "window" $.Values.defaults.weaponsDetection.window) .weaponsDetection).window }}"
+  MIN_WEAPONS_DETECTIONS_PER_SECOND: "{{ default $.Values.defaults.weaponsDetection.minDetectionsPerSecond (default (dict "minDetectionsPerSecond" $.Values.defaults.weaponsDetection.minDetectionsPerSecond) .weaponsDetection).minDetectionsPerSecond }}"
+
+  # Face Cover Detection
+  FACE_COVER_THRESHOLD: "{{ default $.Values.defaults.faceCoverDetection.threshold (default (dict "threshold" $.Values.defaults.faceCoverDetection.threshold) .faceCoverDetection).threshold }}"
+  FACE_COVER_WINDOW_SIZE: "{{ default $.Values.defaults.faceCoverDetection.windowSize (default (dict "windowSize" $.Values.defaults.faceCoverDetection.windowSize) .faceCoverDetection).windowSize }}"
+  FACE_COVER_SLIDING_INTERVAL: "{{ default $.Values.defaults.faceCoverDetection.slidingInterval (default (dict "slidingInterval" $.Values.defaults.faceCoverDetection.slidingInterval) .faceCoverDetection).slidingInterval }}"
+
+  # Line Crossing
+  LINE_CROSSING_INTERVAL_MS: "{{ default $.Values.defaults.lineCrossing.intervalMs (default (dict "intervalMs" $.Values.defaults.lineCrossing.intervalMs) .lineCrossing).intervalMs }}"
+  LINE_CROSSING_WINDOW_MS: "{{ default $.Values.defaults.lineCrossing.windowMs (default (dict "windowMs" $.Values.defaults.lineCrossing.windowMs) .lineCrossing).windowMs }}"
+  LINE_CROSSING_DEJITTER_BATCH_MS: "{{ default $.Values.defaults.lineCrossing.dejitterBatchMs (default (dict "dejitterBatchMs" $.Values.defaults.lineCrossing.dejitterBatchMs) .lineCrossing).dejitterBatchMs }}"
+  LINE_CROSSING_DEJITTER_BATCH_COUNT: "{{ default $.Values.defaults.lineCrossing.dejitterBatchCount (default (dict "dejitterBatchCount" $.Values.defaults.lineCrossing.dejitterBatchCount) .lineCrossing).dejitterBatchCount }}"
+  LINE_CROSSING_VISUAL_DEBUG_ENABLED: "{{ default $.Values.defaults.lineCrossing.visualDebugEnabled (default (dict "visualDebugEnabled" $.Values.defaults.lineCrossing.visualDebugEnabled) .lineCrossing).visualDebugEnabled }}"
+  LINE_CROSSING_VISUAL_DEBUG_PERIPHERAL_ID: "{{ default $.Values.defaults.lineCrossing.visualDebugPeripheralId (default (dict "visualDebugPeripheralId" $.Values.defaults.lineCrossing.visualDebugPeripheralId) .lineCrossing).visualDebugPeripheralId }}"
+
+  # File Transfer
+  TRANSFER_FILE_BLOCK_SIZE: "{{ default $.Values.defaults.fileTransfer.blockSize (default (dict "blockSize" $.Values.defaults.fileTransfer.blockSize) .fileTransfer).blockSize }}"
+
+  # Feature Flags
+  ALERTS_V2_ENABLED: "{{ default $.Values.defaults.featureFlags.alertsV2Enabled (default (dict "alertsV2Enabled" $.Values.defaults.featureFlags.alertsV2Enabled) .featureFlags).alertsV2Enabled }}"
+  STALE_ALERTS_V2_ENABLED: "{{ default $.Values.defaults.featureFlags.staleAlertsV2Enabled (default (dict "staleAlertsV2Enabled" $.Values.defaults.featureFlags.staleAlertsV2Enabled) .featureFlags).staleAlertsV2Enabled }}"
+
+  # ROI Configuration
+  ROI_CONFIG_PATH: "{{ default $.Values.defaults.roiConfig.path (default (dict "path" $.Values.defaults.roiConfig.path) .roiConfig).path }}"
+  ROI_CONFIG_TEST_MODE: "{{ default $.Values.defaults.roiConfig.testMode (default (dict "testMode" $.Values.defaults.roiConfig.testMode) .roiConfig).testMode }}"
+
+  # Extended Occupancy
+  EXTENDED_OCCUPANCY_INTERVAL_S: "{{ default $.Values.defaults.extendedOccupancy.intervalS (default (dict "intervalS" $.Values.defaults.extendedOccupancy.intervalS) .extendedOccupancy).intervalS }}"
+  EXTENDED_OCCUPANCY_TIME_THRESHOLD_S: "{{ default $.Values.defaults.extendedOccupancy.timeThresholdS (default (dict "timeThresholdS" $.Values.defaults.extendedOccupancy.timeThresholdS) .extendedOccupancy).timeThresholdS }}"
+  EXTENDED_OCCUPANCY_CONTINUITY_THRESHOLD_S: "{{ default $.Values.defaults.extendedOccupancy.continuityThresholdS (default (dict "continuityThresholdS" $.Values.defaults.extendedOccupancy.continuityThresholdS) .extendedOccupancy).continuityThresholdS }}"
+{{- end }}
